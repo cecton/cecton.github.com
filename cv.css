@@ -1,0 +1,191 @@
+body {
+	margin: 0;
+	color: white;
+	background-color: #435365;
+	background: url(background.svg);
+	background-attachment: fixed;
+	background-position: center center;
+	font-family: sans-serif;
+    font-size: 12pt;
+}
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #ccc;
+}
+
+a:hover {
+	color: white;
+}
+
+#page {
+	text-align: left;
+	margin: 8px auto;
+    /* no box-sizing to get the full size of the text when screen size is too small to show an A4 */
+	width: 100%;
+	max-width: 185mm;
+	padding: 25mm;
+	color: black;
+	background-color: white;
+	background-color: rgba(255,255,255,0.7);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+	border-radius: 5px;
+	border: 2px solid #ccc;
+    font-size: 12pt;
+}
+
+#page a:link,#page a:visited {
+	color: #333;
+	text-decoration: none;
+}
+
+#page a:hover,#page a:focus {
+	color: inherit;
+}
+
+#foot {
+    margin: 0 auto;
+	width: 100%;
+	max-width: 185mm;
+	padding: 24px 25mm 8px 25mm;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+	background-color: black;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #bbb;
+	font-weight: bold;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid transparent;
+    /* white-space: nowrap; */
+}
+
+#foot a {
+	text-decoration: underline;
+}
+
+.title {
+	margin: 0 0 10mm 0;
+	text-align: center;
+	font-weight: normal;
+}
+
+.title>h1 {
+    margin: 0;
+    font-size: 200%;
+}
+
+.title>.subtitle {
+	text-align: center;
+    clear: both;
+	font-size: 120%;
+}
+
+.word {
+	text-align: right;
+	font-style: italic;
+	margin: 2em 0;
+}
+
+h2,h3 {
+	border-bottom: 1px black solid;
+}
+
+h2>.small,h3>.small {
+    font-size: 0.8em;
+}
+
+h2>.description,h3>.description {
+	float: right;
+}
+
+h2>.description>span,h3>.description>span {
+	font-size: 0.70em;
+    vertical-align: baseline;
+}
+
+h3 {
+	margin-left: 0.4cm;
+	margin-right: 0.4cm;
+}
+
+p {
+	margin: 0 0.8cm 0.21cm 0.8cm;
+}
+
+.card {
+	text-align: center;
+}
+
+.card>.inner {
+	text-align: left;
+	display: inline-block;
+	border-left: 0.8cm;
+	border-right: 1px;
+	border-top: 1px;
+	border-bottom: 1px;
+	border-color: black;
+	border-style: solid;
+	margin: 0.8cm;
+}
+
+.card>.inner>* {
+	padding: 0.4cm;
+}
+
+.card>.inner>.notes {
+	border-top: solid 1px black;
+}
+
+.card p {
+	margin-left: 0;
+}
+
+dl,dt,dd {
+	margin: 0;
+}
+
+dl {
+	margin-left: 0.8cm;
+	width: 100%;
+	overflow: hidden;
+}
+
+dt {
+	clear: left;
+}
+
+dt, dd {
+	float:left;
+	width:50%;
+	margin: 0 0 0.21cm 0;
+}
+
+@media print {
+body {
+	background: none;
+	background-color: white;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+#foot {
+	display: none;
+}
+
+#page {
+	/* border: solid 1px black; */
+	border: 0;
+	box-shadow: none;
+	display: block;
+	margin: 0;
+}
+#inner a:link {
+	color: black;
+	font-weight: inherit;
+}
+.subsection,.card {
+	page-break-inside: avoid;
+}
+}
