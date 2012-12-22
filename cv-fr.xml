@@ -11,7 +11,7 @@
 		<subsection title="YCare" description="05.2011 — 11.2011">
 			<text>Développement complet d’une base de données, importation et mise en place du serveur et des postes clients.</text>
 			<text>Logiciels&#xa0;: Apache Web Server, Perl, DBI, XML/XSLT</text>
-			<text>Tâches&#xa0;: analyse des besoins, structuration des données, développement d’une bibliotheque dédiée, création de scripts et pages personnalisés.</text>
+			<text>Tâches&#xa0;: analyse des besoins, architecture de la dase de données, développement d’une bibliotheque dédiée, création de scripts et pages personnalisés.</text>
 		</subsection>
 		<subsection title="La Fonderie" small="a.s.b.l." description="01.2011 — 04.2011">
 			<text>Développement d’une base de données.</text>
@@ -78,11 +78,6 @@
 		<surname>Tonglet</surname>
 		<email>cecile.tonglet@gmail.com</email>
 		<birth>26&#xa0;ans</birth>
-		<address>
-			<street>rue Hugo d'Oignies 10</street>
-			<cp>5100</cp>
-			<city>Namur</city>
-		</address>
 		<!--
 			<mobile>+32 (0) 4...</mobile>
 			<phone>+32 (0) 2...</phone>
@@ -92,6 +87,6 @@
 </cv>
 
 <!--
-	vim:ts=2:sw=2:
+	vim:ts=2:sw=2:expandtab:
 -->
 
