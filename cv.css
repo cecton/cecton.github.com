@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	color: white;
 	background-color: #435365;
-	background: url(background.svg);
+	/* background: url(background.svg); */
 	background-attachment: fixed;
 	background-position: center center;
 	font-family: sans-serif;
@@ -25,10 +25,10 @@ a:hover {
     /* no box-sizing to get the full size of the text when screen size is too small to show an A4 */
 	width: 100%;
 	max-width: 185mm;
-	padding: 25mm;
+	padding: 20mm 25mm;
 	color: black;
-	background-color: white;
-	background-color: rgba(255,255,255,0.7);
+	background-color: #ddd;
+	/* background-color: rgba(255,255,255,0.7); */
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
 	border-radius: 5px;
 	border: 2px solid #ccc;
@@ -133,12 +133,26 @@ p {
 	padding: 0.4cm;
 }
 
-.card>.inner>.notes {
+.card .notes,.card .links {
 	border-top: solid 1px black;
 }
 
 .card p {
 	margin-left: 0;
+}
+
+.card .links ul {
+    list-style: square inside;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.card .links li {
+    padding-right: 16px;
+}
+
+.card .links .column {
+    display: inline-block;
 }
 
 dl,dt,dd {
@@ -155,9 +169,15 @@ dt {
 	clear: left;
 }
 
-dt, dd {
+dt {
 	float:left;
-	width:50%;
+	width:35%;
+	margin: 0 0 0.21cm 0;
+}
+
+dd {
+	float:left;
+	width:65%;
 	margin: 0 0 0.21cm 0;
 }
 
@@ -185,7 +205,7 @@ body {
 	color: black;
 	font-weight: inherit;
 }
-.subsection,.card {
+.section,.subsection,.card {
 	page-break-inside: avoid;
 }
 }

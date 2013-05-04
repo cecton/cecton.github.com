@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cv url="cv-en.xml">
+  <title>C&#x00e9;cile Tonglet</title>
+  <subtitle>Perl Developer</subtitle>
+  <!--
+  <word>&#x201c;You never finish a program, you just stop working on it.&#x201d;</word>
+  -->
+  <section title="Experience" description="Career path">
+    <subsection title="OpenERP" description="02.2012 — currently">
+      <text>OpenERP module development for the Professional Service department of OpenERP s.a. and software development related to OpenERP.</text>
+      <text>Synchronization module for Médecins Sans Frontières</text>
+    </subsection>
+    <subsection title="YCare" description="05.2011 — 11.2011">
+      <text>ORM with customized Web application to manage a travel agency and orders from the website.</text>
+      <text>Softwares/Languages: Apache Web Server, MySQL, Perl, DBI, XML/XSLT</text>
+      <text>Tasks: needs analysis, database design, framework design, customized scripts and web design.</text>
+    </subsection>
+    <subsection title="La Fonderie" small="a.s.b.l." description="01.2011 — 04.2011">
+      <text>Database developments.</text>
+      <text>Software: FileMaker Pro</text>
+      <text>Tasks: script creation and server maintenance.</text>
+    </subsection>
+  </section>
+  <section title="Skills" description="A brief resume">
+    <abilities>
+      <label>Languages</label>
+      <ability>Perl, Python, C/C++, Pascal, BASIC</ability>
+      <label>Frameworks</label>
+      <ability>Qt, GTK+, Tk</ability>
+      <label>Databases</label>
+      <ability>PostgreSQL, MySQL, FileMaker Pro</ability>
+      <label>Web Development&#xa0;/ Ajax</label>
+      <ability>HTML, CSS, PHP, JavaScript, XML</ability>
+      <label>Standards</label>
+      <ability>W3C, Jabber</ability>
+      <label>System Administration</label>
+      <ability>UNIX/Linux, Windows</ability>
+    </abilities>
+    <subsection
+        title="Functional Skills"
+        description="Excluding the development">
+      <abilities>
+        <label>Manage and Secure Networks</label>
+        <ability>iptables</ability>
+        <label>Computer-Aided Design</label>
+        <ability>AutoCAD, QCad</ability>
+        <label>Image Manipulation</label>
+        <ability>The Gimp, Paint Shop Pro</ability>
+        <label>Office Suites</label>
+        <ability>LaTeX, LibreOffice/OpenOffice.org</ability>
+      </abilities>
+    </subsection>
+  </section>
+  <section title="Training" description="Studies">
+    <abilities>
+      <label>2005&#xa0;—&#xa0;2006</label>
+      <ability>Sciences informatiques, 1<sup>ère</sup> BA<br/>Universite Libre de Bruxelles</ability>
+      <label>2002&#xa0;—&#xa0;2005</label>
+      <ability>Sciences &amp; Informatique,<br/>Institut Provincial d'Enseignement Technique, Nivelles</ability>
+    </abilities>
+  </section>
+  <section title="Social Skills" description="Way of working">
+    <text>Teamworking, speak easily with people, listening, help to customize UI, scripting and task automation, like to share, autodidact and autonomous.</text>
+  </section>
+  <section title="Languages">
+    <abilities>
+      <label>French</label>
+      <ability>Mother tongue</ability>
+      <label>English</label>
+      <ability>Bilingual</ability>
+      <label>Dutch</label>
+      <ability>Notions</ability>
+    </abilities>
+  </section>
+  <section title="Hobbies">
+    <text>Free software, technologies, philosophy, sciences, writing...</text>
+    <text>I like to play with my Raspberry Pi, OpenWRT and creating funny and/or useful stuff</text>
+  </section>
+  <card>
+    <firstname>Cécile</firstname>
+    <surname>Tonglet</surname>
+    <email>cecile.tonglet@gmail.com</email>
+    <birth>27&#xa0;ans</birth>
+    <address>
+      <cp>1370</cp>
+      <city>Jodoigne</city>
+      <country>Belgium</country>
+    </address>
+    <!--
+    <mobile>+32 (0) 4...</mobile>
+    <phone>+32 (0) 2...</phone>
+    -->
+    <note>European Driving Licence B</note>
+    <links>
+      <column>
+        <a href="http://github.com/cecton">Github page</a>
+        <a href="http://launchpad.net/~cto-openerp">Launchpad page</a>
+      </column>
+      <column>
+        <a href="http://www.openerp.com/">OpenERP</a>
+        <a href="https://plus.google.com/116880847817578371571">Google+ page</a>
+      </column>
+    </links>
+  </card>
+</cv>

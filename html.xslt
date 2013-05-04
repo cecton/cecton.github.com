@@ -19,7 +19,7 @@
 			<body>
 				<div id="page"><xsl:apply-templates/></div>
 				<div id="foot">
-            <xsl:text>This CV has been automaticaly generated “on-the-fly” using </xsl:text>
+            <xsl:text>This CV has been automaticaly generated using </xsl:text>
             <a href="{@url}" target="_blank">this XML</a>
             <xsl:text> with </xsl:text>
             <a href="html.xslt" target="_blank">this XSL stylesheet</a>
@@ -104,16 +104,22 @@
 				</strong></p>
 				<xsl:apply-templates select="address|phone|mobile"/>
 			</div>
-			<div class="notes">
-				<xsl:apply-templates select="note"/>
-			</div>
+      <xsl:apply-templates select="note"/>
+      <xsl:apply-templates select="links"/>
 		</div></div>
 	</xsl:template>
 
 	<xsl:template match="card/address">
 		<p>
-			<xsl:value-of select="street"/><br/>
-			<xsl:value-of select="concat(cp,'&#xa0;',city)"/>
+      <a href="http://maps.google.com/maps?q={cp}+{city},+{country}" target="_blank">
+        <xsl:if test="street">
+          <xsl:value-of select="street"/><br/>
+        </xsl:if>
+        <xsl:value-of select="concat(cp,'&#xa0;',city)"/>
+        <xsl:if test="country">
+          <br/><xsl:value-of select="country"/>
+        </xsl:if>
+      </a>
 		</p>
 	</xsl:template>
 
@@ -125,7 +131,29 @@
 		<p><span style="font-family: OpenSymbol;">&#xe201;</span>&#xa0;<xsl:value-of select="text()"/></p>
 	</xsl:template>
 
-	<xsl:template match="card/note"><xsl:value-of select="text()"/><br/></xsl:template>
+	<xsl:template match="card/note">
+    <div class="notes">
+      <xsl:value-of select="text()"/>
+    </div>
+  </xsl:template>
+
+	<xsl:template match="card/links">
+    <div class="links">
+      <xsl:apply-templates/>
+    </div>
+  </xsl:template>
+
+	<xsl:template match="card/links/column">
+    <div class="column">
+      <ul>
+        <xsl:apply-templates/>
+      </ul>
+    </div>
+  </xsl:template>
+
+	<xsl:template match="card/links/column/a">
+		<li><a href="{@href}" target="_blank"><xsl:value-of select="text()"/></a></li>
+  </xsl:template>
 
 	<xsl:template match="br"><br/></xsl:template>
 
