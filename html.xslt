@@ -78,6 +78,10 @@
 		<p><xsl:apply-templates/></p>
 	</xsl:template>
 
+	<xsl:template match="cv//columns">
+		<div class="columns"><xsl:apply-templates/></div>
+	</xsl:template>
+
 	<xsl:template match="cv//abilities">
 		<dl><xsl:apply-templates/></dl>
 	</xsl:template>
@@ -104,6 +108,7 @@
 				</strong></p>
 				<xsl:apply-templates select="address|phone|mobile"/>
 			</div>
+      <xsl:apply-templates select="languages"/>
       <xsl:apply-templates select="note"/>
       <xsl:apply-templates select="links"/>
 		</div></div>
@@ -131,6 +136,19 @@
 		<p><span style="font-family: OpenSymbol;">&#xe201;</span>&#xa0;<xsl:value-of select="text()"/></p>
 	</xsl:template>
 
+	<xsl:template match="card/languages">
+    <div class="languages">
+      <xsl:apply-templates/>
+    </div>
+  </xsl:template>
+
+	<xsl:template match="card/languages/language">
+		<xsl:value-of select="concat(text(),' (',@level,')')"/>
+		<xsl:if test="not(position()=last()-1)">
+			<xsl:text>, </xsl:text>
+		</xsl:if>
+  </xsl:template>
+
 	<xsl:template match="card/note">
     <div class="notes">
       <xsl:value-of select="text()"/>
@@ -143,7 +161,7 @@
     </div>
   </xsl:template>
 
-	<xsl:template match="card/links/column">
+	<xsl:template match="column">
     <div class="column">
       <ul>
         <xsl:apply-templates/>
@@ -151,7 +169,11 @@
     </div>
   </xsl:template>
 
-	<xsl:template match="card/links/column/a">
+	<xsl:template match="column/li">
+		<li><xsl:apply-templates/></li>
+  </xsl:template>
+
+	<xsl:template match="column/a">
 		<li><a href="{@href}" target="_blank"><xsl:value-of select="text()"/></a></li>
   </xsl:template>
 

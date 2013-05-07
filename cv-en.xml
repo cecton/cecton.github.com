@@ -6,17 +6,18 @@
   <word>&#x201c;You never finish a program, you just stop working on it.&#x201d;</word>
   -->
   <section title="Experience" description="Career path">
-    <subsection title="OpenERP" description="02.2012 — currently">
+    <subsection title="OpenERP" description="02.2012 &#x2013; currently">
       <text>OpenERP module development for the Professional Service department of OpenERP s.a. and software development related to OpenERP.</text>
-      <text>Synchronization module for Médecins Sans Frontières</text>
+      <text>Synchronization module for Médecins Sans Frontières.</text>
+      <text>I also used Perl a lot to script everything that can be automated.</text>
     </subsection>
-    <subsection title="YCare" description="05.2011 — 11.2011">
+    <subsection title="YCare" description="05.2011 &#x2013; 11.2011">
       <text>ORM with customized Web application to manage a travel agency and orders from the website.</text>
-      <text>Softwares/Languages: Apache Web Server, MySQL, Perl, DBI, XML/XSLT</text>
-      <text>Tasks: needs analysis, database design, framework design, customized scripts and web design.</text>
+      <text>Software/Languages: Apache Web Server, MySQL, Perl, DBI, XML/XSLT</text>
+      <text>Tasks: requirements analysis, database design, framework design, customized scripts and web design.</text>
     </subsection>
-    <subsection title="La Fonderie" small="a.s.b.l." description="01.2011 — 04.2011">
-      <text>Database developments.</text>
+    <subsection title="La Fonderie" small="a.s.b.l." description="01.2011 &#x2013; 04.2011">
+      <text>Database development.</text>
       <text>Software: FileMaker Pro</text>
       <text>Tasks: script creation and server maintenance.</text>
     </subsection>
@@ -53,27 +54,32 @@
   </section>
   <section title="Training" description="Studies">
     <abilities>
-      <label>2005&#xa0;—&#xa0;2006</label>
+      <label>2005&#xa0;&#x2013;&#xa0;2006</label>
       <ability>Sciences informatiques, 1<sup>ère</sup> BA<br/>Universite Libre de Bruxelles</ability>
-      <label>2002&#xa0;—&#xa0;2005</label>
+      <label>2002&#xa0;&#x2013;&#xa0;2005</label>
       <ability>Sciences &amp; Informatique,<br/>Institut Provincial d'Enseignement Technique, Nivelles</ability>
     </abilities>
   </section>
   <section title="Social Skills" description="Way of working">
-    <text>Teamworking, speak easily with people, listening, help to customize UI, scripting and task automation, like to share, autodidact and autonomous.</text>
-  </section>
-  <section title="Languages">
-    <abilities>
-      <label>French</label>
-      <ability>Mother tongue</ability>
-      <label>English</label>
-      <ability>Bilingual</ability>
-      <label>Dutch</label>
-      <ability>Notions</ability>
-    </abilities>
+    <columns>
+      <column>
+        <li>Teamworking</li>
+        <li>Speak easily with people</li>
+        <li>Listening</li>
+      </column>
+      <column>
+        <li>Help to customize UI</li>
+        <li>Scripting and task automation</li>
+        <li>Like to share</li>
+      </column>
+      <column>
+        <li>Autodidact</li>
+        <li>Autonomous</li>
+      </column>
+    </columns>
   </section>
   <section title="Hobbies">
-    <text>Free software, technologies, philosophy, sciences, writing...</text>
+    <text>Free software, technology, philosophy, science, writing...</text>
     <text>I like to play with my Raspberry Pi, OpenWRT and creating funny and/or useful stuff</text>
   </section>
   <card>
@@ -86,6 +92,11 @@
       <city>Jodoigne</city>
       <country>Belgium</country>
     </address>
+    <languages>
+      <language level="Native">French</language>
+      <language level="Bilingual">English</language>
+      <language level="Notions">Dutch</language>
+    </languages>
     <!--
     <mobile>+32 (0) 4...</mobile>
     <phone>+32 (0) 2...</phone>
