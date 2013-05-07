@@ -17,7 +17,10 @@
 				<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"/> -->
 			</head>
 			<body>
-				<div id="page"><xsl:apply-templates/></div>
+				<div id="page">
+          <div id="pdf"><a href="{@pdf}"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Adobe_PDF_Icon.svg/32px-Adobe_PDF_Icon.svg.png" alt="pdf" title="Get the PDF version of this CV"/></a></div>
+          <xsl:apply-templates/>
+        </div>
 				<div id="foot">
             <xsl:text>This CV has been automaticaly generated using </xsl:text>
             <a href="{@url}" target="_blank">this XML</a>

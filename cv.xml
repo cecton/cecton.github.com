@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cv url="cv-en.xml">
+<cv url="cv.xml" pdf="cv_cecile_tonglet.pdf">
   <title>C&#x00e9;cile Tonglet</title>
   <subtitle>Perl Developer</subtitle>
   <!--
