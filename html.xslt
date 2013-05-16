@@ -12,7 +12,12 @@
     <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;&#x0a;</xsl:text>
 		<html>
 			<head>
-				<link rel="stylesheet" type="text/css" href="cv.css"/>
+				<xsl:if test="@css">
+				  <link rel="stylesheet" type="text/css" href="{@css}"/>
+				</xsl:if>
+				<xsl:if test="@icon">
+          <link rel="shortcut icon" href="{@icon}"/>
+				</xsl:if>
 				<title><xsl:value-of select="$title"/></title>
 				<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"/> -->
 			</head>
