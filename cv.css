@@ -45,7 +45,7 @@ a:hover {
 }
 
 #page #pdf {
-    float: right;
+    float: left;
     position: relative;
     width: 0;
     overflow: visible;
@@ -73,20 +73,23 @@ a:hover {
 }
 
 .title {
-	margin: 0 0 10mm 0;
+	margin: 15mm 0 10mm 0;
 	text-align: center;
 	font-weight: normal;
 }
 
 .title>h1 {
-    margin: 0;
+    margin: 0 0;
     font-size: 200%;
 }
 
 .title>.subtitle {
-	text-align: center;
-    clear: both;
+    display: inline-block;
 	font-size: 120%;
+}
+
+.section {
+    clear: both;
 }
 
 .word {
@@ -122,31 +125,39 @@ p {
 }
 
 .card {
-	text-align: center;
+	text-align: right;
+    font-size: 72%;
+    width: 50%;
+    float: right;
 }
 
 .card>.inner {
 	text-align: left;
 	display: inline-block;
-	border-left: 0.8cm;
+	border-left: 0.4cm;
 	border-right: 1px;
 	border-top: 1px;
 	border-bottom: 1px;
 	border-color: black;
 	border-style: solid;
-	margin: 0.8cm;
+	margin: 0 0 1cm 0;
 }
 
 .card>.inner>* {
-	padding: 0.4cm;
+	padding: 0.1cm 0.2cm;
 }
 
 .card .notes,.card .links, .languages {
 	border-top: solid 1px black;
 }
 
+.card .contact {
+    padding-bottom: 0;
+}
+
 .card p {
 	margin-left: 0;
+    margin-right: 0;
 }
 
 .columns {
@@ -156,6 +167,9 @@ p {
 .column {
     display: inline-block;
     vertical-align: top;
+    margin: 0 0;
+    padding: 0 0;
+    width: 32%;
 }
 
 .column ul {
@@ -203,7 +217,7 @@ body {
 	padding: 0;
 }
 
-#foot,#page #pdf {
+#foot,#page #pdf,.card .links {
 	display: none;
 }
 
@@ -212,7 +226,8 @@ body {
 	border: 0;
 	box-shadow: none;
 	display: block;
-	margin: 0;
+    margin: 0;
+    padding: 0 15mm;
 }
 #inner a:link {
 	color: black;
@@ -220,5 +235,8 @@ body {
 }
 .section,.subsection,.card {
 	page-break-inside: avoid;
+}
+.title {
+    padding-top: 10mm;
 }
 }

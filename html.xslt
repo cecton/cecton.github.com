@@ -4,10 +4,6 @@
 	<xsl:output method="html" encoding="UTF-8"/>
     <!-- doctype-system="http://www.w3.org/TR/html4/strict.dtd" doctype-public="-//W3C//DTD HTML 4.01//EN" -->
 
-	<xsl:variable name="title">
-		<xsl:value-of select="/cv/title"/>
-	</xsl:variable>
-
 	<xsl:template match="cv">
     <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;&#x0a;</xsl:text>
 		<html>
@@ -18,7 +14,7 @@
 				<xsl:if test="@icon">
           <link rel="shortcut icon" href="{@icon}"/>
 				</xsl:if>
-				<title><xsl:value-of select="$title"/></title>
+				<title><xsl:value-of select="concat(title,': ',subtitle)"/></title>
 				<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"/> -->
 			</head>
 			<body>
@@ -39,7 +35,7 @@
 
 	<xsl:template match="cv/title">
 		<div class="title">
-      <h1><xsl:value-of select="$title"/></h1>
+      <h1><xsl:value-of select="../title"/></h1>
       <xsl:if test="../subtitle">
         <div class="subtitle"><xsl:value-of select="../subtitle"/></div>
       </xsl:if>
@@ -107,12 +103,12 @@
 			<div class="contact">
 				<p><strong>
 					<xsl:value-of select="concat(firstname,'&#xa0;',surname)"/>
-					<xsl:if test="birth">
-						<xsl:value-of select="concat(',&#xa0;',birth)"/>
-					</xsl:if>
 					<xsl:text>&#xa0;&lt;</xsl:text>
 					<a href="mailto:{email}"><xsl:value-of select="email"/></a>
 					<xsl:text>&gt;</xsl:text>
+					<xsl:if test="birth">
+						<br/><xsl:value-of select="birth"/>
+					</xsl:if>
 				</strong></p>
 				<xsl:apply-templates select="address|phone|mobile"/>
 			</div>
@@ -151,7 +147,7 @@
   </xsl:template>
 
 	<xsl:template match="card/languages/language">
-		<xsl:value-of select="concat(text(),' (',@level,')')"/>
+		<xsl:value-of select="concat(text(),'&#xa0;(',@level,')')"/>
 		<xsl:if test="not(position()=last()-1)">
 			<xsl:text>, </xsl:text>
 		</xsl:if>

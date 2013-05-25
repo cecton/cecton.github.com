@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cv url="cv.xml" css="cv.css" icon="http://www.gravatar.com/avatar/63b93bd070e5048ad604b9805b97ce1d.png" pdf="cv_cecile_tonglet.pdf">
-  <title>C&#x00e9;cile Tonglet</title>
-  <subtitle>Perl Developer</subtitle>
+  <card>
+    <firstname>Cécile</firstname>
+    <surname>Tonglet</surname>
+    <email>cecile.tonglet@gmail.com</email>
+    <birth>27&#xa0;ans</birth>
+    <address>
+      <cp>1370</cp>
+      <city>Jodoigne</city>
+      <country>Belgium</country>
+    </address>
+    <languages>
+      <language level="Native">French</language>
+      <language level="Bilingual">English</language>
+      <language level="Notions">Dutch</language>
+    </languages>
+    <!--
+    <mobile>+32 (0) 4...</mobile>
+    <phone>+32 (0) 2...</phone>
+    -->
+    <note>European Driving Licence B</note>
+    <links>
+      <column>
+        <a href="http://github.com/cecton">Github</a>
+        <a href="http://launchpad.net/~cto-openerp">LP</a>
+      </column>
+      <column>
+        <a href="http://www.openerp.com/">OpenERP</a>
+      </column>
+    </links>
+  </card>
+  <title>Perl Developer</title>
+  <subtitle>C&#x00e9;cile Tonglet</subtitle>
   <!--
   <word>&#x201c;You never finish a program, you just stop working on it.&#x201d;</word>
   -->
@@ -25,32 +55,20 @@
   <section title="Skills" description="A brief resume">
     <abilities>
       <label>Languages</label>
-      <ability>Perl, Python, C/C++, Pascal, BASIC</ability>
+      <ability>Perl, Python, C++</ability>
       <label>Frameworks</label>
       <ability>Qt, GTK+, Tk</ability>
       <label>Databases</label>
-      <ability>PostgreSQL, MySQL, FileMaker Pro</ability>
-      <label>Web Development&#xa0;/ Ajax</label>
-      <ability>HTML, CSS, PHP, JavaScript, XML</ability>
+      <ability>PostgreSQL, MySQL</ability>
+      <label>Technologies</label>
+      <ability>HTML5 - CSS - JavaScript, XML, PHP</ability>
       <label>Standards</label>
       <ability>W3C, Jabber</ability>
       <label>System Administration</label>
       <ability>UNIX/Linux, Windows</ability>
+      <label>Other</label>
+      <ability>AutoCAD, Image Manipulation, Network Security</ability>
     </abilities>
-    <subsection
-        title="Functional Skills"
-        description="Excluding the development">
-      <abilities>
-        <label>Manage and Secure Networks</label>
-        <ability>iptables</ability>
-        <label>Computer-Aided Design</label>
-        <ability>AutoCAD, QCad</ability>
-        <label>Image Manipulation</label>
-        <ability>The Gimp, Paint Shop Pro</ability>
-        <label>Office Suites</label>
-        <ability>LaTeX, LibreOffice/OpenOffice.org</ability>
-      </abilities>
-    </subsection>
   </section>
   <section title="Training" description="Studies">
     <abilities>
@@ -69,8 +87,8 @@
       </column>
       <column>
         <li>Help to customize UI</li>
-        <li>Scripting and task automation</li>
         <li>Like to share</li>
+        <li>Scripting and task automation</li>
       </column>
       <column>
         <li>Autodidact</li>
@@ -82,35 +100,4 @@
     <text>Free software, technology, philosophy, science, writing...</text>
     <text>I like to play with my Raspberry Pi, OpenWRT and creating funny and/or useful stuff</text>
   </section>
-  <card>
-    <firstname>Cécile</firstname>
-    <surname>Tonglet</surname>
-    <email>cecile.tonglet@gmail.com</email>
-    <birth>27&#xa0;ans</birth>
-    <address>
-      <cp>1370</cp>
-      <city>Jodoigne</city>
-      <country>Belgium</country>
-    </address>
-    <languages>
-      <language level="Native">French</language>
-      <language level="Bilingual">English</language>
-      <language level="Notions">Dutch</language>
-    </languages>
-    <!--
-    <mobile>+32 (0) 4...</mobile>
-    <phone>+32 (0) 2...</phone>
-    -->
-    <note>European Driving Licence B</note>
-    <links>
-      <column>
-        <a href="http://github.com/cecton">Github page</a>
-        <a href="http://launchpad.net/~cto-openerp">Launchpad page</a>
-      </column>
-      <column>
-        <a href="http://www.openerp.com/">OpenERP</a>
-        <a href="https://plus.google.com/116880847817578371571">Google+ page</a>
-      </column>
-    </links>
-  </card>
 </cv>
