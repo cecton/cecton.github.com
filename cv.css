@@ -15,6 +15,10 @@ a {
 	color: #ccc;
 }
 
+.card a {
+	font-weight: inherit;
+}
+
 a:hover {
 	color: white;
 }
@@ -73,7 +77,7 @@ a:hover {
 }
 
 .title {
-	margin: 15mm 0 10mm 0;
+	margin: 10mm 0 10mm 0;
 	text-align: center;
 	font-weight: normal;
 }
@@ -134,7 +138,7 @@ p {
 .card>.inner {
 	text-align: left;
 	display: inline-block;
-	border-left: 0.4cm;
+	border-left: 0.3cm;
 	border-right: 1px;
 	border-top: 1px;
 	border-bottom: 1px;
@@ -237,6 +241,6 @@ body {
 	page-break-inside: avoid;
 }
 .title {
-    padding-top: 10mm;
+    padding-top: 8mm;
 }
 }

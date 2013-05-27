@@ -103,12 +103,12 @@
 			<div class="contact">
 				<p><strong>
 					<xsl:value-of select="concat(firstname,'&#xa0;',surname)"/>
+					<xsl:if test="birth">
+						<xsl:value-of select="concat(', ',birth)"/>
+					</xsl:if>
 					<xsl:text>&#xa0;&lt;</xsl:text>
 					<a href="mailto:{email}"><xsl:value-of select="email"/></a>
 					<xsl:text>&gt;</xsl:text>
-					<xsl:if test="birth">
-						<br/><xsl:value-of select="birth"/>
-					</xsl:if>
 				</strong></p>
 				<xsl:apply-templates select="address|phone|mobile"/>
 			</div>
