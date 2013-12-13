@@ -35,8 +35,14 @@
       </column>
     </links>
   </card>
-  <title>Perl Developer</title>
-  <subtitle>C&#x00e9;cile Tonglet</subtitle>
+  <title name="C&#x00e9;cile Tonglet">
+    <subtitle>
+      <line>-&#xa0;Senior OpenERP Developer</line>
+      <line>-&#xa0;Senior Python Developer</line>
+      <line>-&#xa0;Senior Perl Developer</line>
+      <line>-&#xa0;Haskell Developer</line>
+    </subtitle>
+  </title>
   <!--
   <word>&#x201c;You never finish a program, you just stop working on it.&#x201d;</word>
   -->
@@ -60,13 +66,13 @@
   <section title="Skills" description="A brief resume">
     <abilities>
       <label>Languages</label>
-      <ability>Perl, Python, C++</ability>
+      <ability>Perl (senior), Python (senior), C++ (experimented)</ability>
       <label>Frameworks</label>
-      <ability>Qt, GTK+, Tk</ability>
+      <ability>OpenERP (senior), Qt (experimented), GTK+ (experimented), Tk (experimented)</ability>
       <label>Databases</label>
-      <ability>PostgreSQL, MySQL</ability>
+      <ability>PostgreSQL (senior), MySQL (experimented)</ability>
       <label>Technologies</label>
-      <ability>HTML5 - CSS - JavaScript, XML, PHP</ability>
+      <ability>HTML5 - CSS - JavaScript, XML, PHP (experimented)</ability>
       <label>Standards</label>
       <ability>W3C, Jabber</ability>
       <label>System Administration</label>

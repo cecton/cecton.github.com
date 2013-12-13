@@ -19,7 +19,7 @@
 			</head>
 			<body>
 				<div id="page">
-          <div id="pdf"><a href="{@pdf}"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Adobe_PDF_Icon.svg/32px-Adobe_PDF_Icon.svg.png" alt="pdf" title="Get the PDF version of this CV"/></a></div>
+          <div id="pdf"><a href="{@pdf}"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Adobe_PDF_Icon.svg/64px-Adobe_PDF_Icon.svg.png" alt="pdf" title="Get the PDF version of this CV"/></a></div>
           <xsl:apply-templates/>
         </div>
 				<div id="foot">
@@ -35,14 +35,20 @@
 
 	<xsl:template match="cv/title">
 		<div class="title">
-      <h1><xsl:value-of select="../title"/></h1>
-      <xsl:if test="../subtitle">
-        <div class="subtitle"><xsl:value-of select="../subtitle"/></div>
-      </xsl:if>
+      <h1><xsl:value-of select="@name"/></h1>
+			<xsl:apply-templates/>
     </div>
 	</xsl:template>
 
-	<xsl:template match="cv/subtitle"/>
+	<xsl:template match="cv/title/subtitle">
+    <div class="subtitle">
+			<xsl:apply-templates/>
+    </div>
+	</xsl:template>
+
+	<xsl:template match="cv/title/subtitle/line">
+    <div class="line"><xsl:value-of select="text()"/></div>
+	</xsl:template>
 
 	<xsl:template match="cv/word">
 		<div class="word"><xsl:value-of select="text()"/></div>
