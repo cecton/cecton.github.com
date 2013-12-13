@@ -23,11 +23,11 @@
           <xsl:apply-templates/>
         </div>
 				<div id="foot">
-            <xsl:text>This CV has been automaticaly generated using </xsl:text>
-            <a href="{@url}" target="_blank">this XML</a>
-            <xsl:text> with </xsl:text>
+            <xsl:text>I have made </xsl:text>
             <a href="html.xslt" target="_blank">this XSL stylesheet</a>
-            <xsl:text>.</xsl:text>
+            <xsl:text> and used </xsl:text>
+            <a href="{@url}" target="_blank">this XML file</a>
+            <xsl:text> to make this CV.</xsl:text>
 				</div>
 			</body>
 		</html>
