@@ -66,13 +66,13 @@
   <section title="Skills" description="A brief resume">
     <abilities>
       <label>Languages</label>
-      <ability>Perl (senior), Python (senior), C++ (experimented)</ability>
+      <ability>Perl&#xa0;(senior), Python&#xa0;(senior), C++&#xa0;(experimented)</ability>
       <label>Frameworks</label>
-      <ability>OpenERP (senior), Qt (experimented), GTK+ (experimented), Tk (experimented)</ability>
+      <ability>OpenERP&#xa0;(senior), Qt&#xa0;(experimented), GTK+&#xa0;(experimented), Tk&#xa0;(experimented)</ability>
       <label>Databases</label>
-      <ability>PostgreSQL (senior), MySQL (experimented)</ability>
+      <ability>PostgreSQL&#xa0;(senior), MySQL&#xa0;(experimented)</ability>
       <label>Technologies</label>
-      <ability>HTML5 - CSS - JavaScript, XML, PHP (experimented)</ability>
+      <ability>HTML5&#xa0;-&#xa0;CSS&#xa0;- JavaScript, XML, PHP&#xa0;(experimented)</ability>
       <label>Standards</label>
       <ability>W3C, Jabber</ability>
       <label>System Administration</label>
