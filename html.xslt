@@ -14,7 +14,7 @@
 				<xsl:if test="@icon">
           <link rel="shortcut icon" href="{@icon}"/>
 				</xsl:if>
-				<title><xsl:value-of select="concat(title,': ',subtitle)"/></title>
+				<title><xsl:value-of select="title/@name"/></title>
 				<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"/> -->
 			</head>
 			<body>
