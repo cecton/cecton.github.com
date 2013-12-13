@@ -19,7 +19,9 @@
 			</head>
 			<body>
 				<div id="page">
-          <div id="pdf"><a href="{@pdf}"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Adobe_PDF_Icon.svg/64px-Adobe_PDF_Icon.svg.png" alt="pdf" title="Get the PDF version of this CV"/></a></div>
+          <!--
+               <div id="pdf"><a href="{@pdf}"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Adobe_PDF_Icon.svg/64px-Adobe_PDF_Icon.svg.png" alt="pdf" title="Get the PDF version of this CV"/></a></div>
+            -->
           <xsl:apply-templates/>
         </div>
 				<div id="foot">
@@ -27,7 +29,10 @@
             <a href="html.xslt" target="_blank">this XSL stylesheet</a>
             <xsl:text> and used </xsl:text>
             <a href="{@url}" target="_blank">this XML file</a>
-            <xsl:text> to make this CV.</xsl:text>
+            <xsl:text> to make this CV.</xsl:text><br/>
+            <xsl:text>...but you can also </xsl:text>
+            <a href="{@pdf}">download a PDF version</a>
+            <xsl:text> if you want.</xsl:text>
 				</div>
 			</body>
 		</html>
