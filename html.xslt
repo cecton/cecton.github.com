@@ -163,6 +163,9 @@
     <div class="links">
       <xsl:apply-templates/>
     </div>
+    <div class="website">
+      <xsl:value-of select="/cv/@website"/>
+    </div>
   </xsl:template>
 
 	<xsl:template match="column">

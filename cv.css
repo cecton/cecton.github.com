@@ -151,8 +151,13 @@ p {
 	padding: 0.1cm 0.2cm;
 }
 
-.card .notes,.card .links, .languages {
+.card .notes,.card .links, .languages, .website {
 	border-top: solid 1px black;
+}
+
+.website {
+    display: none;
+    text-align: center;
 }
 
 .card .contact {
@@ -223,6 +228,10 @@ body {
 
 #foot,#page #pdf,.card .links {
 	display: none;
+}
+
+.website {
+    display: block;
 }
 
 #page {
