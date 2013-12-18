@@ -117,7 +117,7 @@
 					<xsl:if test="birth">
 						<xsl:value-of select="concat(', ',birth)"/>
 					</xsl:if>
-					<xsl:text>&#xa0;&lt;</xsl:text>
+					<xsl:text> &lt;</xsl:text>
 					<a href="mailto:{email}"><xsl:value-of select="email"/></a>
 					<xsl:text>&gt;</xsl:text>
 				</strong></p>
