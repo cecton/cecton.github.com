@@ -153,6 +153,7 @@
 
 	<xsl:template match="card/languages">
     <div class="languages">
+      <span class="pre"><xsl:value-of select="@pre"/></span>
       <xsl:apply-templates/>
     </div>
   </xsl:template>

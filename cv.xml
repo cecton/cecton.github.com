@@ -13,7 +13,7 @@
       <city>Jodoigne</city>
       <country>Belgium</country>
     </address>
-    <languages>
+    <languages pre="Languages:">
       <language level="Native">French</language>
       <language level="Bilingual">English</language>
       <language level="Notions">Dutch</language>
@@ -66,19 +66,17 @@
   <section title="Skills" description="A brief resume">
     <abilities>
       <label>Languages</label>
-      <ability>Perl, Python, C++</ability>
+      <ability>Haskell, Perl, Python, C++, Bash</ability>
       <label>Frameworks</label>
       <ability>OpenERP, Qt, GTK+, Tk</ability>
       <label>Databases</label>
       <ability>PostgreSQL, MySQL</ability>
       <label>Technologies</label>
-      <ability>HTML5&#xa0;- CSS&#xa0;- JavaScript, XML, PHP</ability>
-      <label>Standards</label>
-      <ability>W3C, Jabber</ability>
-      <label>System Administration</label>
-      <ability>UNIX/Linux, Windows</ability>
-      <label>Other</label>
-      <ability>AutoCAD, Image Manipulation, Network Security</ability>
+      <ability>HTML5&#xa0;- CSS&#xa0;- JavaScript, XML</ability>
+      <label>OS</label>
+      <ability>Debian, Gentoo, RedHat, OpenSUSE, ArchLinux</ability>
+      <label>Graphism</label>
+      <ability>The Gimp (retouching), Inkscape (vector), AutoCAD (CAD)</ability>
     </abilities>
   </section>
   <section title="Training" description="Studies">
