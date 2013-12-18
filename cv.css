@@ -5,7 +5,7 @@ body {
 	/* background: url(background.svg); */
 	background-attachment: fixed;
 	background-position: center center;
-	font-family: sans-serif;
+	font-family: serif;
     font-size: 12pt;
 }
 
@@ -29,12 +29,11 @@ a:hover {
     /* no box-sizing to get the full size of the text when screen size is too small to show an A4 */
 	width: 100%;
 	max-width: 185mm;
-	padding: 20mm 25mm;
+	padding: 10mm 25mm;
 	color: black;
 	background-color: #ddd;
 	/* background-color: rgba(255,255,255,0.7); */
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
-	border-radius: 5px;
 	border: 2px solid #ccc;
     font-size: 12pt;
 }
@@ -59,17 +58,14 @@ a:hover {
 }
 
 #foot {
-    margin: 0 auto;
-	width: 100%;
-	max-width: 185mm;
-	padding: 24px 25mm 8px 25mm;
-	border-top-left-radius: 14px;
-	border-top-right-radius: 14px;
+    display: block;
+	padding: 24px 25mm 25px 25mm;
+    margin-top: 30px;
 	background-color: black;
 	background-color: rgba(0, 0, 0, 0.8);
 	color: #bbb;
 	font-weight: bold;
-	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
     border: 2px solid transparent;
     text-align: center;
     /* white-space: nowrap; */
@@ -81,8 +77,9 @@ a:hover {
 
 .title {
 	margin: 5mm 0 10mm 0;
-	text-align: center;
+	text-align: left;
 	font-weight: normal;
+    font-variant: small-caps;
 }
 
 .title>h1 {
@@ -94,6 +91,7 @@ a:hover {
     display: inline-block;
 	font-size: 80%;
     text-align: left;
+    margin-left: 0.8cm;
 }
 
 .title>.subtitle>.line {
@@ -139,8 +137,8 @@ p {
 
 .card {
 	text-align: right;
-    font-size: 72%;
-    width: 50%;
+    font-size: 80%;
+    width: 45%;
     float: right;
 }
 
@@ -164,9 +162,11 @@ p {
 	border-top: solid 1px black;
 }
 
+/*
 .languages .pre {
     display: block;
 }
+*/
 
 .website {
     display: none;
