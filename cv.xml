@@ -48,9 +48,19 @@
   -->
   <section title="Experience" description="Career path">
     <subsection title="OpenERP" description="02.2012 &#x2013; currently">
-      <text>OpenERP module development for the Professional Service department of OpenERP s.a. and software development related to OpenERP.</text>
-      <text>Synchronization module for Médecins Sans Frontières.</text>
-      <text>I also used Perl a lot to script everything that can be automated.</text>
+      <text>
+        I currently work for OpenERP in a dual role. The first part of my job
+        consists of module development for the Professional Service department
+        of OpenERP s.a. and software development related to OpenERP in general
+        (core, tooling, ...). I'm the head developer in two database
+        synchronisation projects.
+      </text>
+      <text>
+        For the other half of my job, I work in the migration service where I
+        manage a developer team, maintain a platform for migration services
+        (with web services) and provide some support when the tickets need a
+        deeper expertize.
+      </text>
     </subsection>
     <subsection title="YCare" description="05.2011 &#x2013; 11.2011">
       <text>ORM with customized Web application to manage a travel agency and orders from the website.</text>
