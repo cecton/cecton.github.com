@@ -83,6 +83,28 @@
       <ability>The Gimp (retouching), Inkscape (vector), AutoCAD (CAD)</ability>
     </abilities>
   </section>
+  <section title="Work Quality" description="What I am really good at">
+    <abilities>
+      <label>Analysis</label>
+      <ability>
+        Finding how some code works, revealing issues, performance analysis and
+        profiling, code simplification, optimization and readability.
+      </ability>
+      <label>Maintainability</label>
+      <ability>
+        Find the most reliable and optimal solution to a problem. Fully
+        document it and comment it as much as necessary.
+      </ability>
+      <label>Testing</label>
+      <ability>
+        Test-driven development
+      </ability>
+      <label>Robustness</label>
+      <ability>
+        Good practices
+      </ability>
+    </abilities>
+  </section>
   <section title="Training" description="Studies">
     <abilities>
       <label>2005&#xa0;&#x2013;&#xa0;2006</label>
