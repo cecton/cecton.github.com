@@ -7,7 +7,7 @@
     <firstname>Cécile</firstname>
     <surname>Tonglet</surname>
     <email>cecile.tonglet@gmail.com</email>
-    <birth>27&#xa0;ans</birth>
+    <birth>age 27</birth>
     <address>
       <cp>1370</cp>
       <city>Jodoigne</city>
@@ -46,12 +46,12 @@
         I currently work for OpenERP in a dual role. The first part of my job
         consists of module development for the Professional Service department
         of OpenERP s.a. and software development related to OpenERP in general
-        (core, tooling, ...). I'm the head developer in two database
+        (core, tooling, ...). I'm the lead developer in two database
         synchronisation projects.
       </text>
       <text>
         For the other half of my job, I work in the migration service where I
-        manage a developer team, maintain a platform for migration services
+        manage a development team, maintain a platform for migration services
         (with web services) and provide some support when the tickets need a
         deeper expertize.
       </text>
@@ -87,13 +87,14 @@
     <abilities>
       <label>Analysis</label>
       <ability>
-        Finding how some code works, revealing issues, performance analysis and
-        profiling, code simplification, optimization and readability.
+        Getting a quick grasp on unfamiliar codebases, revealing issues,
+        performance analysis and profiling, code simplification, optimization
+        and readability.
       </ability>
       <label>Maintainability</label>
       <ability>
-        Find the most reliable and optimal solution to a problem. Fully
-        document it and comment it as much as necessary.
+        Finding the most reliable and optimal solution to a given problem.
+        Fully document it and comment it as much as necessary.
       </ability>
       <label>Testing</label>
       <ability>
