@@ -48,7 +48,12 @@
   <word>&#x201c;You never finish a program, you just stop working on it.&#x201d;</word>
   -->
   <section title="Experience" description="Career path">
-    <subsection title="Odoo" description="02.2012 &#x2013; currently">
+    <subsection title="Codabox" description="08.2015 &#x2013; currently">
+      <text>
+        Coming soon...
+      </text>
+    </subsection>
+    <subsection title="Odoo" description="02.2012 &#x2013; 07.2015">
       <text>
         One of my job is to manage a development team, maintain a platform for
         the migration services (with web services) and provide some support
