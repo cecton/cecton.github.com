@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/cecton
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://cecton.com
+  * I am cecton (https://keybase.io/cecton) on keybase.
+  * I have a public key with fingerprint 9AA6 4BE5 6498 792F 4D10  046A A72E CEE7 5C7A 9808
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101fde726b172aafbe01f0909a213da1102b7520748ba5499988e02ce8976eccd370a",
+            "fingerprint": "9aa64be56498792f4d10046aa72ecee75c7a9808",
+            "host": "keybase.io",
+            "key_id": "a72ecee75c7a9808",
+            "kid": "0101fde726b172aafbe01f0909a213da1102b7520748ba5499988e02ce8976eccd370a",
+            "uid": "5127b593f8a429f0d7565401260b1519",
+            "username": "cecton"
+        },
+        "service": {
+            "hostname": "cecton.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1447760614,
+    "expire_in": 157680000,
+    "prev": "a97ec184310262b424fafa7756f69c689636842ca469253df80c0875ef08603a",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.49
+Comment: https://keybase.io/crypto
+
+yMIjAnicrVJvaE1hHL6bERPGFPvgy1Fo3c17zj3n/XNrKUq7KNyLGlvXe97znu3Y
+ds91z7l3rm0XyfbJlNbUEIZtyp8wjTLG/Mn8iZDQUmQisSKTfPCexQflo/fL2/u8
+z/P8fr+n340p43y5WT3HagouvDi0K+vutb1J37rlM4brJd020lKwXqrmYxevMbjj
+RqstQwpKQAayaXCkQF1GCqWmzgUACCBUkQMGlWWg6EhTAFKxTjWVEIIxBwrjmCDI
+GTMCCFDJL5lWrJIn4gkr5gpbQilUda5BlWBEFFM1ZABUSClSOOMcaQxRggEWwirb
+8RSiOZ06vNiyBSYe0bH2/sH/z30nx+w0WUG6RgImpqpCTGAgDWoqkBUIdFmTiUd0
+eCJGa7lgM85cOyY1+iWBpSzGvVi9Of76L2Z2rdDFE7ZrM7tG4FWuGw96Mjcd93h1
+XI/+dojqVswQEQpBiiccS9gHZcFkruVZyqqKEARQVv0S3xK3EjxqeQwNQQzE8crw
+lBcYQZzJWA2I+aGiq4pqUpMiMY4JCYOYwADEqsKoComiBQwTAwYw0rgJMAQBLxGH
+b47ZUlBUcmmlsHSsyhh1kwkuNV7vL8/xZeX6JozP9lbLlzsp78/CPb8x0benn21+
+U3c02B1ZsWhlayRiD5e93TmgDXe1l37plDauyV+RDJU7o3vvtW7quTxn8rZz+YdP
+t7ew5tuDb6fO7o48evx6YdPxd72vyr/tqdkffvA5NfPrraZpvLoqEyoteZ68U20t
+868eqQ99aLs4u2JO0+jTJafya+8Prm/Dk5M5t8KXHl5537Hv69yPL39GZqUzs24X
+pg++T9RdfZr9KTM4srRvaOj+j4GOl+mGzMkTI77tu85kcMc8Utg7+nFtXle4IDy9
+oOTZ2bzW3QvOP7nU3NLU1/miZ0NZurGh6EjpptMtwzdbDuxwvjdXtHfboSFsxd+k
+u6UtfT1Fz+aX7N66avGSnOAvJNVEAw==
+=gYUT
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cecton
+
+==================================================================
