@@ -82,13 +82,13 @@
       <label>Languages</label>
       <ability>Haskell, Perl, Python, C++, Bash</ability>
       <label>Frameworks</label>
-      <ability>Odoo, Qt, GTK+, Tk</ability>
+      <ability>Django, Odoo, Qt, GTK+, Tk</ability>
       <label>Databases</label>
       <ability>PostgreSQL, MySQL</ability>
       <label>Technologies</label>
       <ability>Docker, HTML5&#xa0;- CSS&#xa0;- JavaScript, XML</ability>
       <label>OS</label>
-      <ability>SailfishOS, ArchLinux, Gentoo, Debian, RedHat, OpenSUSE</ability>
+      <ability>ArchLinux, Gentoo, Debian, RedHat, OpenSUSE, SailfishOS</ability>
       <label>Graphism</label>
       <ability>The Gimp (retouching), Inkscape (vector), AutoCAD (CAD)</ability>
     </abilities>
