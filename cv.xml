@@ -9,8 +9,8 @@
     <email>cecile.tonglet@gmail.com</email>
     <birth>age 29</birth>
     <address>
-      <cp>1370</cp>
-      <city>Jodoigne</city>
+      <cp>1390</cp>
+      <city>Grez-Doiceau</city>
       <country>Belgium</country>
     </address>
     <languages pre="Languages:">
@@ -38,10 +38,9 @@
   </card>
   <title name="C&#x00e9;cile Tonglet">
     <subtitle>
+      <line>-&#xa0;Senior Python/Django Developer</line>
       <line>-&#xa0;Senior Odoo Developer</line>
-      <line>-&#xa0;Senior Python Developer</line>
       <line>-&#xa0;Senior Perl Developer</line>
-      <line>-&#xa0;Beginner Haskell Developer</line>
     </subtitle>
   </title>
   <!--
@@ -50,10 +49,13 @@
   <section title="Experience" description="Career path">
     <subsection title="Codabox" description="08.2015 &#x2013; currently">
       <text>
-        In an almost flat hierarchy, I analyze the needs and develop various
-        new features to our internal software including: a REST API, reporting
-        tools and core business applications. Part of my role is also to
+        In an almost flat organization, I analyze the needs and implement various
+        new business logics to our internal softwares including: a REST API,
+        reporting tools and core business services. Part of my role is also to
         maintain our infrastructure and find solutions to our common issues.
+      </text>
+      <text>
+        Technologies: Docker, Python, Django, Django REST framework, HTML5.
       </text>
     </subsection>
     <subsection title="Odoo" description="02.2012 &#x2013; 07.2015">
@@ -63,10 +65,11 @@
         when the tickets need a deeper expertize.
       </text>
       <text>
-        I'm developing from scratch the migration platform using Python, Odoo
-        and Docker in order to make the deployment much easier. My target is
-        now to make a distributed system where workers are located on different
-        computers to do the job.
+        I developed from scratch the migration platform using Python, Odoo
+        and Docker in order to make the deployment much easier. My target was
+        to make a distributed system where workers are located on AWS that can
+        scale depending on the load. I'm still receiving really good feedbacks
+        of my work today by my former colleagues.
       </text>
     </subsection>
     <subsection title="YCare" description="05.2011 &#x2013; 11.2011">
@@ -83,13 +86,15 @@
   <section title="Skills" description="A brief resume">
     <abilities>
       <label>Languages</label>
-      <ability>Haskell, Perl, Python, C++, Bash</ability>
+      <ability>Python, Perl, Bash, C++, Haskell</ability>
       <label>Frameworks</label>
       <ability>Django, Odoo, Qt, GTK+, Tk</ability>
       <label>Databases</label>
-      <ability>PostgreSQL, MySQL</ability>
+      <ability>PostgreSQL, MySQL, SQLite</ability>
       <label>Technologies</label>
-      <ability>Docker, HTML5&#xa0;- CSS&#xa0;- JavaScript, XML</ability>
+      <ability>
+        Docker, Amazon Web Services, HTML5&#xa0;- CSS&#xa0;- JavaScript, XML
+      </ability>
       <label>OS</label>
       <ability>ArchLinux, Gentoo, Debian, RedHat, OpenSUSE, SailfishOS</ability>
       <label>Graphism</label>
@@ -104,18 +109,21 @@
         performance analysis and profiling, code simplification, optimization
         and readability.
       </ability>
-      <label>Maintainability</label>
+      <label>Maintainability&#xa0;&amp; Robustness</label>
       <ability>
-        Finding the most reliable and optimal solution to a given problem.
+        Finding the simplest and most reliable solution to a given problem
+        without losing sight of the fact that the every code need to evolve.
         Fully document it and comment it as much as necessary.
       </ability>
       <label>Testing</label>
       <ability>
-        Test-driven development
+        Test-driven development. I like to have a strong test environment
+        including unit and integration tests.
       </ability>
-      <label>Robustness</label>
+      <label>Team Working</label>
       <ability>
-        Good practices
+        I like to share my knowledge and teach junior developers the art of
+        good programming. I'm very patient and easy to work with.
       </ability>
     </abilities>
   </section>
@@ -147,7 +155,13 @@
     </columns>
   </section>
   <section title="Hobbies">
-    <text>Free software, technology, philosophy, science, writing...</text>
-    <text>I like to play with my Raspberry Pi, OpenWRT and creating funny and/or useful stuff</text>
+    <text>
+      I sometimes help nonprofit organization to set up their working
+      environment.
+    </text>
+    <text>
+      I like to play with my Raspberry Pi, OpenWRT and creating funny and/or
+      useful stuff.
+    </text>
   </section>
 </cv>
