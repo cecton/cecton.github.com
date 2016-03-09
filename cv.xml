@@ -160,8 +160,16 @@
       environment.
     </text>
     <text>
-      I like to play with my Raspberry Pi, OpenWRT and creating funny and/or
-      useful stuff.
+      I am autodidact. Most of my knowledge come from my own passion for
+      programming and computer in general. I'm currently learning React.js for
+      instance.
+    </text>
+    <text>
+      I am enthusiastic about embedded systems, I own two WRT Router, a
+      Raspberry Pi (1 and 2), a Cubieboard and a Novena. I made my own ROM
+      emulation launcher using SDL2 to play retro games (mostly 8 bits and 16
+      bits). I also own a few consoles of my youth: the Sega Saturn (which I
+      modded a bit) and a Sega DreamCast.
     </text>
   </section>
 </cv>
