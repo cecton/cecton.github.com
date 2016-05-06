@@ -47,7 +47,20 @@
   <word>&#x201c;You never finish a program, you just stop working on it.&#x201d;</word>
   -->
   <section title="Experience" description="Career path">
-    <subsection title="Codabox" description="08.2015 &#x2013; currently">
+    <subsection title="TenForce" description="04.2016 &#x2013; currently">
+      <text>
+        Working with semantic technology, coming soon...
+      </text>
+      <text>
+        Currently working on improving tests environment and setting up
+        continuous integration everywhere.
+      </text>
+      <text>
+        Technologies: Docker, Docker Compose, Docker Swarm, Ember.js, Node.js,
+        Python, HTML5.
+      </text>
+    </subsection>
+    <subsection title="Codabox" description="08.2015 &#x2013; 03.2016">
       <text>
         In an almost flat organization, I analyze the needs and implement various
         new business logics to our internal softwares including: a REST API,
@@ -83,17 +96,18 @@
       <text>Tasks: script creation and server maintenance.</text>
     </subsection>
   </section>
-  <section title="Skills" description="A brief resume">
+  <section title="Skills" description="A brief summary">
     <abilities>
       <label>Languages</label>
-      <ability>Python, Perl, Bash, C++, Haskell</ability>
+      <ability>Python, Perl, JavaScript, Bash, C++, Haskell</ability>
       <label>Frameworks</label>
-      <ability>Django, Odoo, Qt, GTK+, Tk</ability>
+      <ability>Django, Odoo, Qt, Flask, Ember.js, GTK+, Tk</ability>
       <label>Databases</label>
       <ability>PostgreSQL, MySQL, SQLite</ability>
       <label>Technologies</label>
       <ability>
-        Docker, Amazon Web Services, HTML5&#xa0;- CSS&#xa0;- JavaScript, XML
+        Docker, React, Amazon&#xa0;Web&#xa0;Services,
+        HTML5&#xa0;- CSS&#xa0;- JavaScript, XML, SDL2
       </ability>
       <label>OS</label>
       <ability>ArchLinux, Gentoo, Debian, RedHat, OpenSUSE, SailfishOS</ability>
@@ -109,7 +123,7 @@
         performance analysis and profiling, code simplification, optimization
         and readability.
       </ability>
-      <label>Maintainability&#xa0;&amp; Robustness</label>
+      <label>Maintainability&#xa0;&amp;<br />Robustness</label>
       <ability>
         Finding the simplest and most reliable solution to a given problem
         without losing sight of the fact that the every code need to evolve.
@@ -161,13 +175,18 @@
     </text>
     <text>
       I am autodidact. Most of my knowledge come from my own passion for
-      programming and computer in general. I'm currently learning React.js for
+      programming and computer in general. I just learned React.js for
       instance.
     </text>
     <text>
-      I am enthusiastic about embedded systems, I own two WRT Router, a
-      Raspberry Pi (1 and 2), a Cubieboard and a Novena. I made my own ROM
-      emulation launcher using SDL2 to play retro games (mostly 8 bits and 16
+      I am enthusiastic about embedded systems, I own two WRT routers, a
+      Raspberry Pi (1 and 2), a Cubieboard and my own personal computer is
+      actually the
+      <a href="https://www.crowdsupply.com/sutajio-kosagi/novena">Novena</a>.
+    </text>
+    <text>
+      I am currently working on a personal project to make a game system
+      capable of playing a bunch of old retro consoles (mostly 8 bits and 16
       bits). I also own a few consoles of my youth: the Sega Saturn (which I
       modded a bit) and a Sega DreamCast.
     </text>

@@ -174,7 +174,9 @@
       <xsl:apply-templates/>
     </div>
     <div class="website">
-      <xsl:value-of select="/cv/@website"/>
+      <a href="{/cv/@website}">
+        <xsl:value-of select="/cv/@website"/>
+      </a>
     </div>
   </xsl:template>
 
