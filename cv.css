@@ -6,7 +6,7 @@ body {
 	background-attachment: fixed;
 	background-position: center center;
 	font-family: serif;
-    font-size: 12pt;
+	font-size: 12pt;
 }
 
 a {
@@ -26,7 +26,7 @@ a:hover {
 #page {
 	text-align: left;
 	margin: 8px auto;
-    /* no box-sizing to get the full size of the text when screen size is too small to show an A4 */
+	/* no box-sizing to get the full size of the text when screen size is too small to show an A4 */
 	width: 100%;
 	max-width: 185mm;
 	padding: 10mm 25mm;
@@ -35,7 +35,7 @@ a:hover {
 	/* background-color: rgba(255,255,255,0.7); */
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
 	border: 2px solid #ccc;
-    font-size: 12pt;
+	font-size: 12pt;
 }
 
 #page a:link,#page a:visited {
@@ -48,29 +48,29 @@ a:hover {
 }
 
 #pdf {
-    position: relative;
-    text-align: right;
-    width: 100%;
-    height: 0;
-    overflow: visible;
-    /*
-    // not clickable anymore
-    z-index: -10;
-    */
+	position: relative;
+	text-align: right;
+	width: 100%;
+	height: 0;
+	overflow: visible;
+	/*
+	// not clickable anymore
+	z-index: -10;
+	*/
 }
 
 #foot {
-    display: block;
+	display: block;
 	padding: 24px 25mm 25px 25mm;
-    margin-top: 30px;
+	margin-top: 30px;
 	background-color: black;
 	background-color: rgba(0, 0, 0, 0.8);
 	color: #bbb;
 	font-weight: bold;
 	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
-    border: 2px solid transparent;
-    text-align: center;
-    /* white-space: nowrap; */
+	border: 2px solid transparent;
+	text-align: center;
+	/* white-space: nowrap; */
 }
 
 #foot a {
@@ -81,28 +81,28 @@ a:hover {
 	margin: 5mm 0 10mm 0;
 	text-align: left;
 	font-weight: normal;
-    font-variant: small-caps;
+	font-variant: small-caps;
 }
 
 .title>h1 {
-    margin: 0 0;
-    font-size: 200%;
+	margin: 0 0;
+	font-size: 200%;
 }
 
 .title>.subtitle {
-    display: inline-block;
+	display: inline-block;
 	font-size: 80%;
-    text-align: left;
-    margin-left: 0.8cm;
+	text-align: left;
+	margin-left: 0.8cm;
 }
 
 .title>.subtitle>.line {
-    display: block;
-    text-align: left;
+	display: block;
+	text-align: left;
 }
 
 .section {
-    clear: both;
+	clear: both;
 }
 
 .word {
@@ -116,7 +116,7 @@ h2,h3 {
 }
 
 h2>.small,h3>.small {
-    font-size: 0.8em;
+	font-size: 0.8em;
 }
 
 h2>.description,h3>.description {
@@ -125,7 +125,7 @@ h2>.description,h3>.description {
 
 h2>.description>span,h3>.description>span {
 	font-size: 0.70em;
-    vertical-align: baseline;
+	vertical-align: baseline;
 }
 
 h3 {
@@ -139,9 +139,9 @@ p {
 
 .card {
 	text-align: right;
-    font-size: 80%;
-    width: 45%;
-    float: right;
+	font-size: 80%;
+	width: 45%;
+	float: right;
 }
 
 .card>.inner {
@@ -166,22 +166,22 @@ p {
 
 /*
 .languages .pre {
-    display: block;
+	display: block;
 }
 */
 
 .website {
-    display: none;
-    text-align: center;
+	display: none;
+	text-align: center;
 }
 
 .card .contact {
-    padding-bottom: 0;
+	padding-bottom: 0;
 }
 
 .card p {
 	margin-left: 0;
-    margin-right: 0;
+	margin-right: 0;
 }
 
 .columns {
@@ -189,21 +189,21 @@ p {
 }
 
 .column {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 0;
-    padding: 0 0;
-    width: 32%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0;
+	padding: 0 0;
+	width: 32%;
 }
 
 .column ul {
-    list-style: square inside;
-    padding: 0 0;
-    margin: 0 0;
+	list-style: square inside;
+	padding: 0 0;
+	margin: 0 0;
 }
 
 .column li {
-    padding-right: 16px;
+	padding-right: 16px;
 }
 
 dl,dt,dd {
@@ -247,7 +247,7 @@ body {
 }
 
 .website {
-    display: block;
+	display: block;
 }
 
 #page {
@@ -255,14 +255,14 @@ body {
 	border: 0;
 	box-shadow: none;
 	display: block;
-    margin: 0;
-    padding: 0 15mm;
-    font-size: 10pt;
+	margin: 0;
+	padding: 0 15mm;
+	font-size: 10pt;
 }
 
 @-moz-document url-prefix() {
 #page {
-    padding: 0 0;
+	padding: 0 0;
 }
 }
 
@@ -274,6 +274,6 @@ body {
 	page-break-inside: avoid;
 }
 .title {
-    padding-top: 8mm;
+	padding-top: 8mm;
 }
 }
