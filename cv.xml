@@ -49,15 +49,17 @@
   <section title="Experience" description="Career path">
     <subsection title="TenForce" description="04.2016 &#x2013; currently">
       <text>
-        Working with semantic technology, coming soon...
+        Working with semantic technology, I made backends for OAuth login,
+        Docker Compose &amp; Swarm administration and an import service using
+        Play framework and Scala.
       </text>
       <text>
-        Currently working on improving tests environment and setting up
-        continuous integration everywhere.
+        I'm also working on improving the tests and setting up continuous
+        integration everywhere.
       </text>
       <text>
-        Technologies: Docker, Docker Compose, Docker Swarm, Ember.js, Node.js,
-        Python, HTML5.
+        Technologies: Scala, Docker, Docker Compose, Docker Swarm, Ember.js,
+        Node.js, Python, HTML5.
       </text>
     </subsection>
     <subsection title="Codabox" description="08.2015 &#x2013; 03.2016">
@@ -99,11 +101,11 @@
   <section title="Skills" description="A brief summary">
     <abilities>
       <label>Languages</label>
-      <ability>Python, Perl, JavaScript, Bash, C++, Haskell</ability>
+      <ability>Python, Perl, JavaScript, Scala, Bash, C++, Haskell</ability>
       <label>Frameworks</label>
-      <ability>Django, Odoo, Qt, Flask, Ember.js, GTK+, Tk</ability>
+      <ability>Django, Odoo, Play, Qt, Flask, Ember.js, GTK+, Tk</ability>
       <label>Databases</label>
-      <ability>PostgreSQL, MySQL, SQLite</ability>
+      <ability>PostgreSQL, MySQL, Virtuoso, SQLite</ability>
       <label>Technologies</label>
       <ability>
         Docker, React, Amazon&#xa0;Web&#xa0;Services,
