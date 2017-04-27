@@ -7,7 +7,7 @@
     <firstname>Cécile</firstname>
     <surname>Tonglet</surname>
     <email>cv@cecton.com</email>
-    <birth>age 29</birth>
+    <birth>age 30</birth>
     <address>
       <cp>1390</cp>
       <city>Grez-Doiceau</city>
@@ -38,7 +38,7 @@
   </card>
   <title name="C&#x00e9;cile Tonglet">
     <subtitle>
-      <line>-&#xa0;Senior Python/Django Developer</line>
+      <line>-&#xa0;Senior Python 2/3 Developer</line>
       <line>-&#xa0;Senior Odoo Developer</line>
       <line>-&#xa0;Senior Perl Developer</line>
     </subtitle>
@@ -101,9 +101,9 @@
   <section title="Skills" description="A brief summary">
     <abilities>
       <label>Languages</label>
-      <ability>Python, Perl, JavaScript, Scala, Bash, C++, Haskell</ability>
+      <ability>Python 2/3, Perl, JavaScript, Scala, Bash, C++, Haskell</ability>
       <label>Frameworks</label>
-      <ability>Django, Odoo, Play, Qt, Flask, Ember.js, GTK+, Tk</ability>
+      <ability>Django, asyncio/aiohttp, Odoo, Play, Qt, Flask, Ember.js, GTK+, Tk</ability>
       <label>Databases</label>
       <ability>PostgreSQL, MySQL, Virtuoso, SQLite</ability>
       <label>Technologies</label>
@@ -119,6 +119,17 @@
   </section>
   <section title="Work Quality" description="What I am really good at">
     <abilities>
+      <label>Assiduous</label>
+      <ability>
+        I like to focus and get the things done. I'm in favor to get quickly
+        some result and fail fast to improve and get to the next step smarter.
+      </ability>
+      <label>DevOps</label>
+      <ability>
+        Excellent at scripting and automation. I like the things to work out of
+        the box without any hassle. I believe every project should get
+        continuous integration and proper review.
+      </ability>
       <label>Analysis</label>
       <ability>
         Getting a quick grasp on unfamiliar codebases, revealing issues,
@@ -151,25 +162,6 @@
       <ability>Sciences &amp; Informatique,<br/>Institut Provincial d'Enseignement Technique, Nivelles</ability>
     </abilities>
   </section>
-  <section title="Social Skills" description="Way of working">
-    <columns>
-      <column>
-        <li>Teamworking</li>
-        <li>Speak easily with people</li>
-        <li>Listening</li>
-      </column>
-      <column>
-        <li>Help to customize UI</li>
-        <li>Like to share</li>
-        <li>Scripting and task automation</li>
-      </column>
-      <column>
-        <li>Love to learn</li>
-        <li>Autodidact</li>
-        <li>Autonomous</li>
-      </column>
-    </columns>
-  </section>
   <section title="Hobbies">
     <text>
       I sometimes help nonprofit organization to set up their working
@@ -192,5 +184,24 @@
       bits). I also own a few consoles of my youth: the Sega Saturn (which I
       modded a bit) and a Sega DreamCast.
     </text>
+  </section>
+  <section title="Social Skills" description="Way of working">
+    <columns>
+      <column>
+        <li>Teamworking</li>
+        <li>Speak easily with people</li>
+        <li>Listening</li>
+      </column>
+      <column>
+        <li>Help to customize UI</li>
+        <li>Like to share</li>
+        <li>Scripting and task automation</li>
+      </column>
+      <column>
+        <li>Love to learn</li>
+        <li>Autodidact</li>
+        <li>Autonomous</li>
+      </column>
+    </columns>
   </section>
 </cv>
