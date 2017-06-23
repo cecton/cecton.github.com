@@ -7,16 +7,16 @@
     <firstname>Cécile</firstname>
     <surname>Tonglet</surname>
     <email>cv@cecton.com</email>
-    <birth>age 30</birth>
+    <birth>age 31</birth>
     <address>
       <cp>1390</cp>
       <city>Grez-Doiceau</city>
       <country>Belgium</country>
     </address>
     <languages pre="Languages:">
-      <language level="Native">French</language>
-      <language level="Bilingual">English</language>
-      <language level="Notions">Dutch</language>
+      <language level="5. Native">French</language>
+      <language level="4. Full professional proficiency">English</language>
+      <language level="1. Elementary proficiency">Dutch</language>
     </languages>
     <!--
     <mobile>+32 (0) 4...</mobile>
@@ -49,17 +49,18 @@
   <section title="Experience" description="Career path">
     <subsection title="TenForce" description="04.2016 &#x2013; currently">
       <text>
-        Working with semantic technology, I made backends for OAuth login,
-        Docker Compose &amp; Swarm administration and an import service using
-        Play framework and Scala.
+        Working on semantic technology, I made backends for OAuth login,
+        Docker Compose &amp; Swarm backend and a few various libraries.
       </text>
       <text>
-        I'm also working on improving the tests and setting up continuous
-        integration everywhere.
+        I'm also in charge of the DevOps adminisitration part of our
+        department: continuous integration tools, automatic deployment &amp;
+        packaging, etc... I'm always proposing new ideas to improve our
+        processes and development environments.
       </text>
       <text>
-        Technologies: Scala, Docker, Docker Compose, Docker Swarm, Ember.js,
-        Node.js, Python, HTML5.
+        Technologies: Terraform, Scala, Docker, Docker Compose, Docker Swarm,
+        Node.js, Python 3 (with asyncio), Open Stack.
       </text>
     </subsection>
     <subsection title="Codabox" description="08.2015 &#x2013; 03.2016">
@@ -109,7 +110,7 @@
       <label>Technologies</label>
       <ability>
         Docker, React, Amazon&#xa0;Web&#xa0;Services,
-        HTML5&#xa0;- CSS&#xa0;- JavaScript, XML, SDL2
+        Python Async I/O, HTML5&#xa0;- CSS&#xa0;- JavaScript, XML, SDL2
       </ability>
       <label>OS</label>
       <ability>ArchLinux, Gentoo, Debian, RedHat, OpenSUSE, SailfishOS</ability>
@@ -139,7 +140,7 @@
       <label>Maintainability&#xa0;&amp;<br />Robustness</label>
       <ability>
         Finding the simplest and most reliable solution to a given problem
-        without losing sight of the fact that the every code need to evolve.
+        without losing sight of the fact that every code need to evolve.
         Fully document it and comment it as much as necessary.
       </ability>
       <label>Testing</label>
@@ -169,13 +170,13 @@
     </text>
     <text>
       I am autodidact. Most of my knowledge come from my own passion for
-      programming and computer in general. I just learned React.js for
+      programming and computer in general. I learned React.js recently for
       instance.
     </text>
     <text>
-      I am enthusiastic about embedded systems, I own two WRT routers, a
-      Raspberry Pi (1 and 2), a Cubieboard and my own personal computer is
-      actually the
+      I am enthusiastic about embedded systems, I own two WRT routers,
+      Raspberry Pi (1 and 2), a Cubieboard and my one of own personal computer
+      is actually the
       <a href="https://www.crowdsupply.com/sutajio-kosagi/novena">Novena</a>.
     </text>
     <text>
@@ -188,18 +189,16 @@
   <section title="Social Skills" description="Way of working">
     <columns>
       <column>
-        <li>Teamworking</li>
-        <li>Speak easily with people</li>
-        <li>Listening</li>
+        <li>Team player</li>
+        <li>Client focused</li>
       </column>
       <column>
-        <li>Help to customize UI</li>
-        <li>Like to share</li>
-        <li>Scripting and task automation</li>
-      </column>
-      <column>
+        <li>Like to share knowledge</li>
         <li>Love to learn</li>
         <li>Autodidact</li>
+      </column>
+      <column>
+        <li>Listening</li>
         <li>Autonomous</li>
       </column>
     </columns>
