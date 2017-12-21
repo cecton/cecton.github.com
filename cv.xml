@@ -40,14 +40,24 @@
     <subtitle>
       <line>-&#xa0;Senior Python 2/3 Developer</line>
       <line>-&#xa0;Senior Odoo Developer</line>
-      <line>-&#xa0;Senior Perl Developer</line>
+      <line>-&#xa0;Experienced React Developer</line>
     </subtitle>
   </title>
   <!--
   <word>&#x201c;You never finish a program, you just stop working on it.&#x201d;</word>
   -->
   <section title="Experience" description="Career path">
-    <subsection title="TenForce" description="04.2016 &#x2013; currently">
+    <subsection title="TenForce" description="09.2017 &#x2013; currently">
+      <text>
+        I'm rewriting completely the front-end of the TenForce Web application
+        to make it fast, responsive and easier to maintain.
+      </text>
+      <text>
+        Technologies: React, TypeScript, Redux, redux-observable, RxJS, Jest
+        and WebPack.
+      </text>
+    </subsection>
+    <subsection title="TenForce" description="04.2016 &#x2013; 08.2017">
       <text>
         Working on semantic technology, I made backends for OAuth login,
         Docker Compose &amp; Swarm backend and a few various libraries.
@@ -107,10 +117,12 @@
       <ability>Django, asyncio/aiohttp, Odoo, Play, Qt, Flask, Ember.js, GTK+, Tk</ability>
       <label>Databases</label>
       <ability>PostgreSQL, MySQL, Virtuoso, SQLite</ability>
+      <label>JavaScript</label>
+      <ability>TypeScript, React, Redux, RxJS, Jest, WebPack, Hapi</ability>
       <label>Technologies</label>
       <ability>
-        Docker, React, Amazon&#xa0;Web&#xa0;Services,
-        Python Async I/O, HTML5&#xa0;- CSS&#xa0;- JavaScript, XML, SDL2
+        Docker, React, Amazon&#xa0;Web&#xa0;Services, Python Async I/O, XML,
+        SDL2
       </ability>
       <label>OS</label>
       <ability>ArchLinux, Gentoo, Debian, RedHat, OpenSUSE, SailfishOS</ability>
