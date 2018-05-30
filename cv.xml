@@ -7,7 +7,7 @@
     <firstname>Cécile</firstname>
     <surname>Tonglet</surname>
     <email>cv@cecton.com</email>
-    <birth>age 31</birth>
+    <birth>age 32</birth>
     <address>
       <cp>1390</cp>
       <city>Grez-Doiceau</city>
@@ -38,9 +38,10 @@
   </card>
   <title name="C&#x00e9;cile Tonglet">
     <subtitle>
+      <line>-&#xa0;Rust Developer</line>
+      <line>-&#xa0;Experienced React Developer</line>
       <line>-&#xa0;Senior Python 2/3 Developer</line>
       <line>-&#xa0;Senior Odoo Developer</line>
-      <line>-&#xa0;Experienced React Developer</line>
     </subtitle>
   </title>
   <!--
@@ -112,7 +113,7 @@
   <section title="Skills" description="A brief summary">
     <abilities>
       <label>Languages</label>
-      <ability>Python 2/3, Perl, JavaScript, Scala, Bash, C++, Haskell</ability>
+      <ability>Rust, Scala, JavaScript, Haskell, Python 2/3, Perl, Bash, C++</ability>
       <label>Frameworks</label>
       <ability>Django, asyncio/aiohttp, Odoo, Play, Qt, Flask, Ember.js, GTK+, Tk</ability>
       <label>Databases</label>
@@ -125,7 +126,7 @@
         SDL2
       </ability>
       <label>OS</label>
-      <ability>ArchLinux, Gentoo, Debian, RedHat, OpenSUSE, SailfishOS</ability>
+      <ability>ArchLinux, (WSL), Gentoo, Debian, RedHat, OpenSUSE, SailfishOS</ability>
       <label>Graphism</label>
       <ability>The Gimp (retouching), Inkscape (vector), AutoCAD (CAD)</ability>
     </abilities>
@@ -177,7 +178,7 @@
   </section>
   <section title="Hobbies">
     <text>
-      I sometimes help nonprofit organization to set up their working
+      I sometimes help nonprofit organization to set up their work
       environment.
     </text>
     <text>
@@ -187,15 +188,14 @@
     </text>
     <text>
       I am enthusiastic about embedded systems, I own two WRT routers,
-      Raspberry Pi (1 and 2), a Cubieboard and my one of own personal computer
-      is actually the
+      Raspberry Pi (1 and 2), a Cubieboard and a
       <a href="https://www.crowdsupply.com/sutajio-kosagi/novena">Novena</a>.
     </text>
     <text>
-      I am currently working on a personal project to make a game system
-      capable of playing a bunch of old retro consoles (mostly 8 bits and 16
-      bits). I also own a few consoles of my youth: the Sega Saturn (which I
-      modded a bit) and a Sega DreamCast.
+      I like doing my own stff. I made a game system capable of playing a bunch
+      of old retro consoles (mostly 8 bits and 16 bits). I also own a few
+      consoles of my youth: the Sega Saturn (which I modded a bit) and a Sega
+      DreamCast. I'm now planning to make my own Bomberman.
     </text>
   </section>
   <section title="Social Skills" description="Way of working">
