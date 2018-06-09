@@ -78,6 +78,7 @@ a:hover {
 }
 
 .title {
+	display: inline-block;
 	margin: 5mm 0 10mm 0;
 	text-align: left;
 	font-weight: normal;
@@ -90,15 +91,13 @@ a:hover {
 }
 
 .title>.subtitle {
-	display: inline-block;
+	display: block;
 	font-size: 80%;
-	text-align: left;
-	margin-left: 0.8cm;
 }
 
 .title>.subtitle>.line {
 	display: block;
-	text-align: left;
+	text-align: center;
 }
 
 .section {
