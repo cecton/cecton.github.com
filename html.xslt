@@ -58,7 +58,7 @@
   </xsl:template>
 
   <xsl:template match="cv//section">
-    <div class="section">
+    <div class="section {@class}">
       <h2>
         <xsl:value-of select="@title"/>
         <xsl:if test="@small">

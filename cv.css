@@ -269,7 +269,7 @@ body {
 	color: black;
 	font-weight: inherit;
 }
-.section,.subsection,.card {
+.nb,.subsection,.card {
 	page-break-inside: avoid;
 }
 .title {
