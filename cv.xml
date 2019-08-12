@@ -139,8 +139,8 @@
       <ability>TypeScript, React, Redux, RxJS, Jest, WebPack, Hapi</ability>
       <label>Technologies</label>
       <ability>
-        Docker, React, Amazon&#xa0;Web&#xa0;Services, Python Async I/O, XML,
-        SDL2
+        Serverless, Docker, React, Amazon&#xa0;Web&#xa0;Services, Python Async
+I/O, XML, SDL2
       </ability>
       <label>OS</label>
       <ability>ArchLinux, (WSL), Gentoo, Debian, RedHat, OpenSUSE, SailfishOS</ability>
