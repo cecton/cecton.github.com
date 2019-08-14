@@ -22,16 +22,6 @@
         <div id="page">
           <xsl:apply-templates/>
         </div>
-        <div id="foot">
-            <xsl:text>I have made </xsl:text>
-            <a href="html.xslt" target="_blank">this XSL stylesheet</a>
-            <xsl:text> and used </xsl:text>
-            <a href="{@url}" target="_blank">this XML file</a>
-            <xsl:text> to make this CV.</xsl:text><br/>
-            <xsl:text>...but you can also </xsl:text>
-            <a href="{@pdf}">download a PDF version</a>
-            <xsl:text> if you want.</xsl:text>
-        </div>
       </body>
     </html>
   </xsl:template>

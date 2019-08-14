@@ -40,7 +40,7 @@
   <title name="C&#x00e9;cile Tonglet">
     <subtitle>
       <line>CTO &amp; Senior Software Engineer</line>
-      <line>Rust&#xa0;&#x2013; React</line>
+      <line>Rust&#xa0;&#x2013; Serverless</line>
     </subtitle>
   </title>
   <!--
@@ -49,12 +49,16 @@
   <section title="Experience" description="Career path">
     <subsection title="Charlin" description="01.2019 &#x2013; 08.2019">
       <text>
-        I'm building an engineering team with a strong culture based on trust and efficiency.
-        Optimized for asynchronous work and emphazing code ownership, responsibility, decision making and freedom of choice.
+        I built an engineering team with a strong culture based on trust and
+        efficiency.  Optimized for asynchronous work and emphazing code ownership,
+        responsibility, decision making and freedom of choice.
+      </text>
+      <text>
+        Our mission was to help elders to stay at home longer using IoT.
       </text>
       <text>
         Technologies: AWS (IoT, Lambda, RDS, Fargate, CloudFront), Terraform,
-        React.js, Node.js, Python.
+        React.js, Node.js, Python, Rust.
       </text>
     </subsection>
     <subsection title="Collibra" description="09.2018 &#x2013; 12.2018">
@@ -127,7 +131,7 @@
       <text>Tasks: script creation and server maintenance.</text>
     </subsection>
   </section>
-  <section title="Skills" description="A brief summary" class="nb">
+  <section title="Technical Skills" description="A brief summary" class="nb">
     <abilities>
       <label>Languages</label>
       <ability>Rust, Scala, JavaScript, Haskell, Python 2/3, Perl, Bash, C++</ability>
@@ -139,8 +143,8 @@
       <ability>TypeScript, React, Redux, RxJS, Jest, WebPack, Hapi</ability>
       <label>Technologies</label>
       <ability>
-        Serverless, Docker, React, Amazon&#xa0;Web&#xa0;Services, Python Async
-I/O, XML, SDL2
+        Serverless, Docker, React, Amazon&#xa0;Web&#xa0;Services,
+        Python Async&#xa0;I/O, XML, SDL2
       </ability>
       <label>OS</label>
       <ability>ArchLinux, (WSL), Gentoo, Debian, RedHat, OpenSUSE, SailfishOS</ability>
@@ -148,11 +152,35 @@ I/O, XML, SDL2
       <ability>The Gimp (retouching), Inkscape (vector), AutoCAD (CAD)</ability>
     </abilities>
   </section>
+  <section title="Catalytic Skills" description="&quot;Soft&quot; skills" class="nb">
+    <columns>
+      <column>
+        <li>Leadership</li>
+        <li>Good communicator</li>
+        <li>Transparent</li>
+        <li>Pragmatic</li>
+      </column>
+      <column>
+        <li>Passionate</li>
+        <li>Innovative</li>
+        <li>Autodidact</li>
+        <li>Autonomous</li>
+      </column>
+      <column>
+        <li>Team player</li>
+        <li>Love to share knowledge</li>
+        <li>Good listener</li>
+        <li>Motivator</li>
+        <li>Good sense of humor</li>
+      </column>
+    </columns>
+  </section>
   <section title="Work Quality" description="What I am really good at" class="nb">
     <abilities>
       <label>Effectiveness</label>
       <ability>
-        I try to choose the path that will bring more effective results in my management and decision making process.
+        I try to choose the path that will bring more effective results in my
+        management and decision making process.
       </ability>
       <label>DevOps</label>
       <ability>
@@ -175,7 +203,8 @@ I/O, XML, SDL2
       <label>Testing</label>
       <ability>
         Test-driven development. I like to have a strong test environment
-        including unit and integration tests. I will, however, debate if I believe some tests aren't bringing any value to the application.
+        including unit and integration tests. I will, however, debate if I
+        believe some tests aren't bringing any value to the application.
       </ability>
       <label>Team Working</label>
       <ability>
@@ -193,10 +222,6 @@ I/O, XML, SDL2
   </section>
   <section title="Hobbies" class="nb">
     <text>
-      I sometimes help nonprofit organization to set up their work
-      environment.
-    </text>
-    <text>
       I am autodidact. Most of my knowledge come from my own passion for
       programming and computer in general by reading books.
     </text>
@@ -211,22 +236,5 @@ I/O, XML, SDL2
       consoles of my youth: the Sega Saturn (which I modded a bit) and a Sega
       DreamCast.
     </text>
-  </section>
-  <section title="Social Skills" description="Way of working" class="nb">
-    <columns>
-      <column>
-        <li>Team player</li>
-        <li>Client focused</li>
-      </column>
-      <column>
-        <li>Like to share knowledge</li>
-        <li>Love to learn</li>
-        <li>Autodidact</li>
-      </column>
-      <column>
-        <li>Listening</li>
-        <li>Autonomous</li>
-      </column>
-    </columns>
   </section>
 </cv>
