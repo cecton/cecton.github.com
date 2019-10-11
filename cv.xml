@@ -136,7 +136,7 @@
       <label>Languages</label>
       <ability>Rust, Scala, JavaScript, Haskell, Python 2/3, Perl, Bash, C++</ability>
       <label>Frameworks</label>
-      <ability>Django, asyncio/aiohttp, Odoo, Play, Qt, Flask, Ember.js, GTK+, Tk</ability>
+      <ability>Django, asyncio/aiohttp, Odoo, Play, Qt, Flask, GTK+, Tk</ability>
       <label>Databases</label>
       <ability>PostgreSQL, MySQL, Virtuoso, SQLite</ability>
       <label>JavaScript</label>
