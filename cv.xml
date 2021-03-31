@@ -26,33 +26,57 @@
     <links>
       <column>
         <a href="http://github.com/cecton">GitHub</a>
-        <a href="http://gitlab.com/cecton">GitLab</a>
-      </column>
-      <column>
-        <a href="http://be.linkedin.com/in/cecton/en">LinkedIn</a>
-        <a href="https://twitter.com/CecileTonglet">Twitter</a>
-      </column>
-      <column>
+        <a href="https://github.com/sponsors/cecton">GitHub Sponsors</a>
         <a href="http://blog.cecton.com">Blog</a>
+      </column>
+      <column>
+        <a href="https://twitter.com/CecileTonglet">Twitter</a>
+        <a href="http://be.linkedin.com/in/cecton/en">LinkedIn</a>
       </column>
     </links>
   </card>
   <title name="C&#x00e9;cile Tonglet">
     <subtitle>
-      <line>CTO &amp; Senior Software Engineer</line>
-      <line>Rust&#xa0;&#x2013; Serverless</line>
+      <line>Senior Software Engineer</line>
+      <line>Rust</line>
     </subtitle>
   </title>
   <!--
   <word>&#x201c;You never finish a program, you just stop working on it.&#x201d;</word>
   -->
   <section title="Experience" description="Career path">
+    <subsection title="IMI Hydronic Engineering" description="11.2020 &#x2013; current">
+      <text>
+        I'm building a frontend Web App that communicates with an IoT device
+        to show a live feed of data of the device.
+      </text>
+      <text>
+        Technologies: Rust, WASM.
+      </text>
+    </subsection>
+    <subsection title="Big Boy Systems" description="07.2020 &#x2013; 10.2020">
+      <text>
+        Developing a web application and a captive portal for a 3D camera.
+      </text>
+      <text>
+        Technologies: Python, React, JavaScript, Raspberry Pi.
+      </text>
+    </subsection>
     <subsection title="Parity Technology" description="01.2020 &#x2013; current">
       <text>
         Helping to build Web 3.
       </text>
       <text>
         Technologies: Rust, Blockchain.
+      </text>
+    </subsection>
+    <subsection title="RustMinded SRL" description="01.2020 &#x2013; current">
+      <text>
+        I founded my own company so I can work on Rust projects all over the
+        world.
+      </text>
+      <text>
+        Technologies: Rust.
       </text>
     </subsection>
     <subsection title="Charlin" description="01.2019 &#x2013; 08.2019">
