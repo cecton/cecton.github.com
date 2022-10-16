@@ -7,10 +7,10 @@
     <firstname>Cécile</firstname>
     <surname>Tonglet</surname>
     <email>cv@cecton.com</email>
-    <birth>age 32</birth>
+    <birth>age 36</birth>
     <address>
-      <cp>1390</cp>
-      <city>Grez-Doiceau</city>
+      <cp>5330</cp>
+      <city>Assesse</city>
       <country>Belgium</country>
     </address>
     <languages pre="Languages:">
@@ -37,14 +37,22 @@
   </card>
   <title name="C&#x00e9;cile Tonglet">
     <subtitle>
-      <line>Senior Software Engineer</line>
-      <line>Rust</line>
+      <line>Rust Developer &#x1f980;</line>
     </subtitle>
   </title>
   <!--
   <word>&#x201c;You never finish a program, you just stop working on it.&#x201d;</word>
   -->
   <section title="Experience" description="Career path">
+    <subsection title="RustMinded SRL" description="01.2020 &#x2013; current">
+      <text>
+        I founded my own company so I can work on Rust projects all over the
+        world.
+      </text>
+      <text>
+        Technologies: Rust.
+      </text>
+    </subsection>
     <subsection title="IMI Hydronic Engineering" description="11.2020 &#x2013; current">
       <text>
         I'm building a frontend Web App that communicates with an IoT device
@@ -52,6 +60,15 @@
       </text>
       <text>
         Technologies: Rust, WASM.
+      </text>
+    </subsection>
+    <subsection title="Apollo GraphQL" description="08.2021 &#x2013; 03.2022">
+      <text>
+        Working on the performant Apollo GraphQL Router in RustWorking on the
+        performant Apollo GraphQL Router in Rust
+      </text>
+      <text>
+        Technologies: Rust.
       </text>
     </subsection>
     <subsection title="Big Boy Systems" description="07.2020 &#x2013; 10.2020">
@@ -62,21 +79,12 @@
         Technologies: Python, React, JavaScript, Raspberry Pi.
       </text>
     </subsection>
-    <subsection title="Parity Technology" description="01.2020 &#x2013; current">
+    <subsection title="Parity Technology" description="01.2020 &#x2013; 07.2021">
       <text>
         Helping to build Web 3.
       </text>
       <text>
         Technologies: Rust, Blockchain.
-      </text>
-    </subsection>
-    <subsection title="RustMinded SRL" description="01.2020 &#x2013; current">
-      <text>
-        I founded my own company so I can work on Rust projects all over the
-        world.
-      </text>
-      <text>
-        Technologies: Rust.
       </text>
     </subsection>
     <subsection title="Charlin" description="01.2019 &#x2013; 08.2019">
