@@ -14,6 +14,9 @@
         <xsl:if test="@icon">
           <link rel="shortcut icon" href="{@icon}"/>
         </xsl:if>
+        <xsl:if test="@me">
+          <link rel="me" href="{@me}"/>
+        </xsl:if>
         <title><xsl:value-of select="title/@name"/></title>
         <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"/> -->
       </head>

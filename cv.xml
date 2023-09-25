@@ -2,7 +2,8 @@
 <cv url="cv.xml" css="cv.css"
     icon="https://www.gravatar.com/avatar/63b93bd070e5048ad604b9805b97ce1d.png"
     pdf="cv_cecile_tonglet.pdf"
-    website="www.cecton.com">
+    website="www.cecton.com"
+    me="https://hachyderm.io/@cecton">
   <card>
     <firstname>Cécile</firstname>
     <surname>Tonglet</surname>
