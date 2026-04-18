@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cécile Tonglet — Senior Rust Developer</title>
+  <style>
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --rust:       #b7410e;
+      --rust-light: #f4ece8;
+      --rust-mid:   #d4784a;
+      --gray-dark:  #1e1e1e;
+      --gray-mid:   #444;
+      --gray-soft:  #666;
+      --gray-line:  #ddd;
+      --gray-bg:    #f9f9f9;
+      --white:      #fff;
+      --font-main:  'Georgia', serif;
+      --font-ui:    'Helvetica Neue', Arial, sans-serif;
+    }
+
+    html { font-size: 15px; }
+
+    body {
+      font-family: var(--font-main);
+      color: var(--gray-dark);
+      background: var(--gray-bg);
+      line-height: 1.65;
+    }
+
+    /* ── Page Shell ── */
+    .page {
+      max-width: 860px;
+      margin: 2.5rem auto;
+      background: var(--white);
+      padding: 3rem 3.5rem;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+    }
+
+    /* ── Header ── */
+    header {
+      border-left: 5px solid var(--rust);
+      padding-left: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-family: var(--font-ui);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--gray-dark);
+      letter-spacing: -0.5px;
+    }
+
+    header .subtitle {
+      font-family: var(--font-ui);
+      font-size: 1rem;
+      color: var(--rust);
+      font-weight: 600;
+      margin-top: 0.15rem;
+      margin-bottom: 0.6rem;
+    }
+
+    header .contact {
+      font-family: var(--font-ui);
+      font-size: 0.82rem;
+      color: var(--gray-soft);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 1.2rem;
+      margin-top: 0.4rem;
+    }
+
+    header .contact a {
+      color: var(--rust);
+      text-decoration: none;
+    }
+
+    header .contact a:hover { text-decoration: underline; }
+
+    header .contact span { display: flex; align-items: center; gap: 0.3rem; }
+
+    /* ── Section Headings ── */
+    h2 {
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--rust);
+      border-bottom: 1.5px solid var(--rust-light);
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    /* ── Profile ── */
+    .profile p {
+      margin-bottom: 0.75rem;
+      color: var(--gray-mid);
+      font-size: 0.93rem;
+    }
+
+    /* ── Skills Table ── */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: var(--font-ui);
+      font-size: 0.82rem;
+      margin-top: 0.25rem;
+    }
+
+    .skills-table tr { border-bottom: 1px solid var(--gray-line); }
+    .skills-table tr:last-child { border-bottom: none; }
+
+    .skills-table td {
+      padding: 0.45rem 0.5rem;
+      vertical-align: top;
+    }
+
+    .skills-table td:first-child {
+      font-weight: 700;
+      color: var(--gray-dark);
+      white-space: nowrap;
+      width: 11rem;
+      padding-right: 1rem;
+    }
+
+    .skills-table td:last-child { color: var(--gray-mid); }
+
+    /* ── Notable Projects ── */
+    .projects-list {
+      list-style: none;
+      font-size: 0.9rem;
+    }
+
+    .projects-list li {
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--gray-line);
+      color: var(--gray-mid);
+    }
+
+    .projects-list li:last-child { border-bottom: none; }
+
+    .projects-list strong {
+      color: var(--gray-dark);
+      font-family: var(--font-ui);
+    }
+
+    .projects-list a {
+      color: var(--rust);
+      text-decoration: none;
+      font-family: var(--font-ui);
+      font-size: 0.8rem;
+      margin-left: 0.4rem;
+    }
+
+    .projects-list a:hover { text-decoration: underline; }
+
+    /* ── Experience ── */
+    .exp-block {
+      margin-bottom: 1.75rem;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .exp-company {
+      font-family: var(--font-ui);
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--gray-dark);
+    }
+
+    .exp-title {
+      font-family: var(--font-ui);
+      font-size: 0.88rem;
+      color: var(--rust);
+      font-weight: 600;
+      margin-bottom: 0.15rem;
+    }
+
+    .exp-meta {
+      font-family: var(--font-ui);
+      font-size: 0.78rem;
+      color: var(--gray-soft);
+    }
+
+    .exp-dates { font-style: normal; }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin: 0.5rem 0 0.6rem;
+    }
+
+    .tag {
+      font-family: var(--font-ui);
+      font-size: 0.72rem;
+      background: var(--rust-light);
+      color: var(--rust);
+      border-radius: 3px;
+      padding: 0.15rem 0.5rem;
+      font-weight: 600;
+    }
+
+    .exp-desc {
+      font-size: 0.9rem;
+      color: var(--gray-mid);
+    }
+
+    .exp-desc p { margin-bottom: 0.5rem; }
+
+    .exp-desc ul {
+      padding-left: 1.2rem;
+      margin-top: 0.3rem;
+    }
+
+    .exp-desc ul li { margin-bottom: 0.25rem; }
+
+    /* Sub-engagements (client work inside RustMinded) */
+    .sub-engagements { margin-top: 0.75rem; }
+
+    .sub-block {
+      border-left: 3px solid var(--rust-light);
+      padding-left: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .sub-block:last-child { margin-bottom: 0; }
+
+    .sub-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.2rem;
+    }
+
+    .sub-company {
+      font-family: var(--font-ui);
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: var(--gray-dark);
+    }
+
+    .sub-title {
+      font-family: var(--font-ui);
+      font-size: 0.82rem;
+      color: var(--rust);
+      font-style: italic;
+    }
+
+    /* TenForce sub-periods */
+    .sub-period {
+      margin-bottom: 1rem;
+    }
+
+    .sub-period:last-child { margin-bottom: 0; }
+
+    .sub-period-label {
+      font-family: var(--font-ui);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--gray-dark);
+      margin-bottom: 0.3rem;
+    }
+
+    /* ── Recommendations ── */
+    .rec-block {
+      border-left: 3px solid var(--rust-light);
+      padding: 0.65rem 1rem;
+      margin-bottom: 1.1rem;
+      background: var(--gray-bg);
+    }
+
+    .rec-block blockquote {
+      font-size: 0.88rem;
+      color: var(--gray-mid);
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+
+    .rec-block cite {
+      font-family: var(--font-ui);
+      font-size: 0.78rem;
+      color: var(--gray-soft);
+      font-style: normal;
+    }
+
+    .rec-block cite strong {
+      color: var(--gray-dark);
+    }
+
+    /* ── Print ── */
+    @media print {
+      body { background: white; font-size: 12px; }
+
+      .page {
+        margin: 0;
+        padding: 1.5cm 1.8cm;
+        box-shadow: none;
+        max-width: 100%;
+      }
+
+      h2 { margin-top: 1rem; }
+
+      .rec-block { background: white; }
+
+      a { color: var(--rust) !important; text-decoration: none; }
+
+      .tag { border: 1px solid var(--rust-mid); }
+
+      /* Avoid breaking inside blocks */
+      .exp-block, .sub-block, .rec-block, .projects-list li {
+        break-inside: avoid;
+      }
+    }
+
+    @page {
+      margin: 1.5cm;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ══ HEADER ══ -->
+  <header>
+    <h1>Cécile Tonglet</h1>
+    <div class="subtitle">Senior Rust Developer 🦀</div>
+    <div class="contact">
+      <span>📍 Assesse, Walloon Region, Belgium</span>
+      <span>🌐 Open to remote opportunities</span>
+      <span>✉️ <a href="mailto:cecile.tonglet@cecton.com">cecile.tonglet@cecton.com</a></span>
+      <span>🐙 <a href="https://github.com/cecton" target="_blank">github.com/cecton</a></span>
+    </div>
+  </header>
+
+  <!-- ══ PROFILE ══ -->
+  <h2>Profile</h2>
+  <div class="profile">
+    <p>For the past several years, specialising in Rust to build everything from WebAssembly libraries to event-driven architectures, low-level IoT binary abstractions, and data modeling systems. Rust's combination of safety, performance, and expressiveness makes it possible to tackle problems that would be risky or inefficient in other languages.</p>
+    <p>Author of <strong>gptman</strong> and <strong>mbrman</strong>, both packaged in major Linux distributions like Fedora and NixOS — sometimes even used in their installers. Also a contributor to the Rust <strong>Yew</strong> framework. These started as tools needed for real work, but getting feedback from users discovering them in unexpected places is a constant reminder of why building software that others find useful matters.</p>
+    <p>AI has become essential to the workflow, but not as a crutch. Used for error detection, improving naming, exploring unfamiliar codebases, and handling tedious but straightforward tasks — amplifying productivity and code quality while keeping critical architectural decisions firmly human.</p>
+    <p>A Linux user since the age of 15, over 25 years, starting with Debian and Slackware, spending years on Arch, and now experimenting with NixOS. The terminal is where productivity peaks — scripting solutions rather than clicking through interfaces. On the infrastructure side, serverless architectures on AWS managed through Terraform, with a preference for Nix locally for reproducibility.</p>
+    <p>Over the course of a long career, the balance between engineering excellence and pragmatic delivery has become second nature. Large codebases and unfamiliar systems hold no fear — the goal is always code that is well-architected enough to evolve cleanly, but ships fast enough to deliver real value.</p>
+  </div>
+
+  <!-- ══ SKILLS ══ -->
+  <h2>Skills</h2>
+  <table class="skills-table">
+    <tr>
+      <td>Core Languages</td>
+      <td>Rust, Python, TypeScript, JavaScript, Haskell, Scala, C, Bash, Perl, SQL</td>
+    </tr>
+    <tr>
+      <td>Web &amp; Frontend</td>
+      <td>WebAssembly, React.js, Redux.js, RxJS, HTML5, CSS, Webpack, Node.js, Jest</td>
+    </tr>
+    <tr>
+      <td>Backend &amp; APIs</td>
+      <td>Django, Django REST Framework, GraphQL, SPARQL, DBI, XSL</td>
+    </tr>
+    <tr>
+      <td>Infrastructure</td>
+      <td>Docker, Docker Swarm, Terraform, AWS, Serverless, CI/CD, Raspberry Pi</td>
+    </tr>
+    <tr>
+      <td>Databases</td>
+      <td>PostgreSQL, MySQL</td>
+    </tr>
+    <tr>
+      <td>Tooling &amp; OS</td>
+      <td>Git, Linux (NixOS, Arch, Debian, Gentoo, openSUSE), GStreamer, Odoo, OpenCode</td>
+    </tr>
+    <tr>
+      <td>AI Tools</td>
+      <td>GitHub Copilot, Anthropic Claude</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Open-Source Software, Data Modelling, Distributed Systems, Coaching</td>
+    </tr>
+  </table>
+
+  <!-- ══ NOTABLE PROJECTS ══ -->
+  <h2>Notable Projects &amp; Open Source</h2>
+  <ul class="projects-list">
+    <li>
+      <strong>gptman</strong>
+      <a href="https://github.com/rust-disk-partition-management/gptman" target="_blank">↗ github.com/rust-disk-partition-management/gptman</a><br>
+      A GPT partition table manager written in Rust. Packaged in major Linux distributions including Fedora and NixOS, where it is sometimes used in the distribution installer itself.
+    </li>
+    <li>
+      <strong>mbrman</strong>
+      <a href="https://github.com/rust-disk-partition-management/mbrman" target="_blank">↗ github.com/rust-disk-partition-management/mbrman</a><br>
+      An MBR partition table manager written in Rust. Also packaged in Fedora and NixOS.
+    </li>
+    <li>
+      <strong>Yew framework</strong>
+      <a href="https://yew.rs" target="_blank">↗ yew.rs</a><br>
+      Contributor to the Rust/WebAssembly frontend framework Yew.
+    </li>
+    <li>
+      <strong>Apollo Router</strong>
+      <a href="https://github.com/apollographql/router" target="_blank">↗ github.com/apollographql/router</a><br>
+      Early core contributor to Apollo's high-performance federated GraphQL gateway, specifically the query planner engine. Now a widely adopted project in the Rust ecosystem.
+    </li>
+  </ul>
+
+  <!-- ══ EXPERIENCE ══ -->
+  <h2>Experience</h2>
+
+  <!-- RustMinded -->
+  <div class="exp-block">
+    <div class="exp-header">
+      <span class="exp-company">🦀 RustMinded</span>
+      <span class="exp-meta exp-dates">Jan 2020 – Present</span>
+    </div>
+    <div class="exp-title">Founder &amp; Rust Consultant</div>
+    <div class="exp-meta">Assesse, Belgium — Remote</div>
+    <div class="tags">
+      <span class="tag">Rust</span>
+      <span class="tag">Coaching</span>
+      <span class="tag">Anthropic Claude</span>
+      <span class="tag">GitHub Copilot</span>
+      <span class="tag">GitHub</span>
+      <span class="tag">Git</span>
+    </div>
+    <div class="exp-desc">
+      <p>Founded an independent Rust consultancy offering remote software development services internationally, specialising in backend systems and WebAssembly. Alongside client work, provided one-on-one mentoring to developers learning Rust, working collaboratively on real projects with hands-on code reviews to accelerate their growth.</p>
+    </div>
+
+    <div class="sub-engagements">
+
+      <!-- IMI -->
+      <div class="sub-block">
+        <div class="sub-header">
+          <span class="sub-company">IMI Hydronic Engineering</span>
+          <span class="exp-meta">Nov 2020 – Apr 2026</span>
+        </div>
+        <div class="sub-title">Senior Software Engineer</div>
+        <div class="tags">
+          <span class="tag">Rust</span>
+          <span class="tag">WebAssembly</span>
+          <span class="tag">CI/CD</span>
+          <span class="tag">Data Modelling</span>
+          <span class="tag">GitHub Copilot</span>
+          <span class="tag">Anthropic Claude</span>
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+        </div>
+        <div class="exp-desc">
+          <ul>
+            <li>Built an embedded WebAssembly web application enabling real-time data visualisation and remote configuration of IoT devices</li>
+            <li>Developed a core communication library for IoT devices, improving system structure and robustness</li>
+            <li>Created data models for configuration screens and device communication protocols</li>
+            <li>Set up internal tooling and CI/CD pipelines, streamlining development workflows and improving overall engineering standards</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Apollo GraphQL -->
+      <div class="sub-block">
+        <div class="sub-header">
+          <span class="sub-company">Apollo GraphQL</span>
+          <span class="exp-meta">Aug 2021 – Mar 2022</span>
+        </div>
+        <div class="sub-title">Core Developer, Apollo Router</div>
+        <div class="tags">
+          <span class="tag">Rust</span>
+          <span class="tag">Back-End Web Development</span>
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">Open-Source Software</span>
+        </div>
+        <div class="exp-desc">
+          <p>Joined Apollo Router as a freelance core developer in its early stages, contributing over 8 months to the query planner — the core engine responsible for federated GraphQL query planning and execution across distributed services. Helped lay the architectural foundations of what has become a widely adopted high-performance GraphQL gateway in the Rust ecosystem.</p>
+        </div>
+      </div>
+
+      <!-- Parity -->
+      <div class="sub-block">
+        <div class="sub-header">
+          <span class="sub-company">Parity Technologies</span>
+          <span class="exp-meta">Jan 2020 – Jul 2021</span>
+        </div>
+        <div class="sub-title">Back End Developer</div>
+        <div class="tags">
+          <span class="tag">Rust</span>
+          <span class="tag">Back-End Web Development</span>
+          <span class="tag">CLI</span>
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+        </div>
+        <div class="exp-desc">
+          <p>Contributed to CLI tooling and developer experience improvements within the Polkadot ecosystem. Provided support and enhancements to command-line interfaces, helping to streamline developer workflows in the blockchain development environment.</p>
+        </div>
+      </div>
+
+      <!-- Big Boy Systems -->
+      <div class="sub-block">
+        <div class="sub-header">
+          <span class="sub-company">Big Boy Systems</span>
+          <span class="exp-meta">Jul 2020 – Oct 2020</span>
+        </div>
+        <div class="sub-title">Full Stack Engineer</div>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">React.js</span>
+          <span class="tag">GStreamer</span>
+          <span class="tag">Raspberry Pi</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Back-End Web Development</span>
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+        </div>
+        <div class="exp-desc">
+          <p>Short mission where a captive portal system was built and Linux environments configured for 3D video recording devices. Developed an embedded web application for real-time video and audio streaming, creating a complete solution for device setup and content delivery in a hardware-based video streaming platform.</p>
+        </div>
+      </div>
+
+    </div><!-- /sub-engagements -->
+  </div><!-- /RustMinded -->
+
+  <!-- Collibra -->
+  <div class="exp-block">
+    <div class="exp-header">
+      <span class="exp-company">Collibra</span>
+      <span class="exp-meta exp-dates">Sep 2018 – Dec 2019</span>
+    </div>
+    <div class="exp-title">Senior Software Programmer</div>
+    <div class="exp-meta">Brussels Metropolitan Area</div>
+    <div class="tags">
+      <span class="tag">TypeScript</span>
+      <span class="tag">React.js</span>
+      <span class="tag">Webpack</span>
+      <span class="tag">Jest</span>
+    </div>
+    <div class="exp-desc">
+      <p>Developed user interface components and features for a data governance platform, working on a product used by enterprise clients to manage and understand their data assets at scale.</p>
+    </div>
+  </div>
+
+  <!-- TenForce -->
+  <div class="exp-block">
+    <div class="exp-header">
+      <span class="exp-company">TenForce</span>
+      <span class="exp-meta exp-dates">Apr 2016 – Aug 2018</span>
+    </div>
+    <div class="exp-title">Senior Software Developer</div>
+    <div class="exp-meta">Leuven, Belgium</div>
+
+    <div class="sub-period">
+      <div class="sub-period-label">2017 – 2018</div>
+      <div class="tags">
+        <span class="tag">TypeScript</span>
+        <span class="tag">React.js</span>
+        <span class="tag">CI/CD</span>
+        <span class="tag">Redux.js</span>
+        <span class="tag">Webpack</span>
+        <span class="tag">RxJS</span>
+        <span class="tag">Git</span>
+        <span class="tag">GitLab</span>
+      </div>
+      <div class="exp-desc">
+        <p>Led a full rewrite of the TenForce Web application front-end, modernising the codebase to make it significantly faster, more responsive, and easier to maintain.</p>
+      </div>
+    </div>
+
+    <div class="sub-period">
+      <div class="sub-period-label">2016 – 2017</div>
+      <div class="tags">
+        <span class="tag">Docker</span>
+        <span class="tag">Docker Swarm</span>
+        <span class="tag">Python</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">HTML5</span>
+        <span class="tag">Scala</span>
+        <span class="tag">GitLab</span>
+        <span class="tag">Git</span>
+        <span class="tag">SPARQL</span>
+      </div>
+      <div class="exp-desc">
+        <p>Worked with semantic technology, building backends for OAuth login, Docker Compose &amp; Swarm administration, and an import service using the Play framework and Scala. Also improved test coverage and established continuous integration across the stack.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Codabox -->
+  <div class="exp-block">
+    <div class="exp-header">
+      <span class="exp-company">CODABOX SA</span>
+      <span class="exp-meta exp-dates">Aug 2015 – Mar 2016</span>
+    </div>
+    <div class="exp-title">Back End Developer</div>
+    <div class="exp-meta">Leuven, Belgium</div>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">Django</span>
+      <span class="tag">Django REST Framework</span>
+      <span class="tag">Docker</span>
+    </div>
+    <div class="exp-desc">
+      <p>Worked as a backend developer in a small, agile team of 3 developers within a ~10-person company. Contributed to the design and development of core platform features enabling Belgian fiduciaries to seamlessly connect with banks and social secretariats (Group S, Partena, etc.) to retrieve financial and payroll data.</p>
+      <ul>
+        <li>Developed and maintained a REST API used by clients to integrate and interoperate with the platform</li>
+        <li>Implemented new business logic across internal services, translating domain requirements into reliable backend solutions</li>
+        <li>Built internal reporting tools to support operational monitoring and business insights</li>
+        <li>Participated in infrastructure maintenance and troubleshooting to ensure platform stability</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Odoo -->
+  <div class="exp-block">
+    <div class="exp-header">
+      <span class="exp-company">Odoo</span>
+      <span class="exp-meta exp-dates">Feb 2012 – Jul 2015</span>
+    </div>
+    <div class="exp-title">Technical Lead &amp; Co-Manager, Migration Services</div>
+    <div class="exp-meta">Ramillies, Belgium</div>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">PostgreSQL</span>
+      <span class="tag">Data Migration</span>
+      <span class="tag">CI/CD</span>
+    </div>
+    <div class="exp-desc">
+      <p>Managed a development team and maintained a platform for migration services, including web services, while providing deeper technical support on complex tickets.</p>
+      <p>Developed from scratch a distributed migration platform using Python, Odoo, and Docker, with the goal of making deployment significantly easier. Designed the system with AWS-hosted workers capable of scaling dynamically under load — an approach that continued to receive very positive feedback from former colleagues long after the work was completed.</p>
+    </div>
+  </div>
+
+  <!-- ══ RECOMMENDATIONS ══ -->
+  <h2>Recommendations</h2>
+
+  <div class="rec-block">
+    <blockquote>"I had the pleasure of working with Cecile Tonglet during her time with us at IMI, and I can confidently say she made a marking impact on our IoT development efforts. Cecile is a true expert in Rust, and her technical depth translated in a very short time when she joined us into tangible results for our team. She built an embedded WebAssembly-based web application that enabled real-time data visualization and remote device configuration, giving users powerful, intuitive control over live device feeds and parameters. Beyond that, she developed a core communication library for our IoT devices that significantly improved the structure and robustness of our system. In addition to her development contributions, Cecile was instrumental in setting up some of our tools and CI/CD pipelines, streamlining our workflows and raising the overall engineering standard of the team. Cecile is someone you can trust to take ownership of complex challenges and deliver high-quality results. I would highly recommend her to any team looking for a skilled and impactful engineer."</blockquote>
+    <cite><strong>Jean-Christophe Carette</strong> — Head of Technology, IMI Climate Control</cite>
+  </div>
+
+  <div class="rec-block">
+    <blockquote>"I worked with Cecile for almost five years in my role as a tester, and during that time she stood out as one of the most meticulous and skilled Python and Rust developers I collaborated with. She was always easy to reach, worked quickly and precisely, and brought a calm, thoughtful approach that made teamwork smooth and efficient. Beyond her work on the core product, she took the initiative to build a wide range of internal tools for testing, debugging, and troubleshooting. These tools significantly improved our workflows and made daily work easier for the entire team. Her attention to detail and steady execution helped us consistently deliver products that met customer expectations. Cecile was a dependable professional whose contributions genuinely strengthened the team."</blockquote>
+    <cite><strong>Jan Toman</strong> — Test &amp; Support Engineer, IMI Hydronic Engineering</cite>
+  </div>
+
+  <div class="rec-block">
+    <blockquote>"I really enjoyed working with Cecile at IMI. She's a talented Rust developer with great problem‑solving skills, clean code practices, and a strong ability to design efficient, well‑structured solutions that keep projects moving forward. On top of that, she's easy to work with, positive, and always brings great energy to the team. Any company would be lucky to have her!"</blockquote>
+    <cite><strong>Jimmy Goffaux</strong> — Ingénieur tests, IMI</cite>
+  </div>
+
+  <div class="rec-block">
+    <blockquote>"Cecile is an amazing developer, she is quick and does high quality development, with very good maintainability and stability. The Rust development she does for us is perfectly adapted for our embedded application."</blockquote>
+    <cite><strong>Victor Hittinger</strong> — Head of Sales Switzerland, IMI Climate Control</cite>
+  </div>
+
+  <div class="rec-block">
+    <blockquote>"I had the chance to work with Cecile and really appreciated her approach to software development. She stays calm and pragmatic when things get complex. You can rely on her to deliver fast, but at the same time she consistently puts care into building things properly with the long term in mind. On top of that, she's easy to work with. Thoughtful, collaborative, and straightforward in her communication. I can strongly recommend her to any team looking for a dependable developer."</blockquote>
+    <cite><strong>Yohan Boogaert</strong> — Software Developer, RustMinded</cite>
+  </div>
+
+  <div class="rec-block">
+    <blockquote>"I worked with Cecile at TenForce and remember her as an adaptable and positive engineer who was open to new challenges. During that time, she worked across different areas: from backend microservices and frontend to various DevOps tasks. She took on each transition willingly, even when it wasn't her primary area of expertise, and focused on getting things done. She was reliable, practical, and brought a positive energy to the team. I would be happy to work with Cecile again and can recommend her to any team looking for a versatile and dependable engineer."</blockquote>
+    <cite><strong>Andriy Lisovoy</strong> — Senior Software Engineer, CoreLedger</cite>
+  </div>
+
+  <div class="rec-block">
+    <blockquote>"I worked with Cecile at Tenforce and I admired how sharp and technically strong she was. She consistently delivered high-quality work and approached problems with good judgment and a practical mindset. Just as importantly, she was genuinely great to work with: reliable, collaborative, and someone who made the day-to-day work better. I look back very positively on the time we worked together and would strongly recommend her."</blockquote>
+    <cite><strong>Cristian Vasquez</strong> — Consultant – Knowledge graphs and Agentic solutions, Self-employed</cite>
+  </div>
+
+  <div class="rec-block">
+    <blockquote>"I met Cecile when we both worked at Odoo. She's one of the best developers I know, with a huge technical knowledge and a seemingly endless desire to know even more. She's also a very kind and listening person."</blockquote>
+    <cite><strong>Nicolas Vanhoren</strong> — Software Engineer, EURESYS</cite>
+  </div>
+
+</div><!-- /page -->
+</body>
+</html>
