@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/cecton
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.cecton.com
+  * I am cecton (https://keybase.io/cecton) on keybase.
+  * I have a public key ASCIR7AvNr_iAiwuaaCDiYo9DDhvSWxKKwFl36s6YwvbFAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101fde726b172aafbe01f0909a213da1102b7520748ba5499988e02ce8976eccd370a",
+      "host": "keybase.io",
+      "kid": "01208847b02f36bfe2022c2e69a083898a3d0c386f496c4a2b0165dfab3a630bdb140a",
+      "uid": "5127b593f8a429f0d7565401260b1519",
+      "username": "cecton"
+    },
+    "merkle_root": {
+      "ctime": 1530950787,
+      "hash": "a8167e3d86cf28d5554060090ece126426a511595c166016566943201009f58755cdae119bb533dff17dfaad8a25d15d01dc43320e13fa1fea8d8517453b3f5d",
+      "hash_meta": "b3de7df82f5bf5ffe9072844037a2007a761402bcc5d515af3f5bbe3dc7af1e8",
+      "seqno": 3212757
+    },
+    "service": {
+      "entropy": "J7WdOygonEPYil2XEmea6paB",
+      "hostname": "www.cecton.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.1.2"
+  },
+  "ctime": 1530950794,
+  "expire_in": 504576000,
+  "prev": "1ac7e580a6344da5f6bdb7686e9177fd44d95a617eba8023e2a4901dd24ab743",
+  "seqno": 23,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgiEewLza/4gIsLmmgg4mKPQw4b0lsSisBZd+rOmML2xQKp3BheWxvYWTESpcCF8QgGsflgKY0TaX2vbdobpF3/UTZWmF+uoAj4qSQHdJKt0PEINZk1Y9ZZQ2WYjKoQcIqSuuXh5RkBWuNxD2hrlhvrqA1AgHCo3NpZ8RACvG+5a5YYmyW5giIRv2mpP4gqNTtAlRJ4RFng46KW0pMRdXjvRR95k/0OAtcNvq9CpvpF+/DGgibkIjs3e4nCahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJ+Asprk6Qair71UJtHfrMqsixP2LTa1Zk9I/kZMCKgKo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cecton
+
+==================================================================
