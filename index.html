@@ -367,7 +367,7 @@
   <!-- ══ PROFILE ══ -->
   <h2>Profile</h2>
   <div class="profile">
-    <p>For the past several years, I've been using Rust to build everything from WebAssembly libraries to event-driven architectures, low-level IoT binary abstractions, and data modeling systems. Rust's combination of safety, performance, and expressiveness lets me tackle problems that would be risky or inefficient in other languages.</p>
+    <p>For the past several years, I've been using Rust to build everything from WebAssembly libraries to async, event-driven backend services, low-level IoT binary abstractions, and data modeling systems. Rust's combination of safety, performance, and expressiveness lets me tackle problems that would be risky or inefficient in other languages.</p>
     <p>I'm the author of <strong>gptman</strong> and <strong>mbrman</strong>, both packaged in major Linux distributions like Fedora and NixOS — sometimes even used in their installers. I've also contributed to the Rust <strong>Yew</strong> framework. These started as tools I needed for my own work, but getting feedback from users discovering them in unexpected places always reminds me why I love building software that others find useful.</p>
     <p>AI has become essential to my workflow, but not as a crutch. I use it for error detection, improving naming, exploring unfamiliar codebases, and handling tedious but straightforward tasks. It amplifies my productivity and code quality — but I'm always the one making the critical architectural decisions.</p>
     <p>I've been using Linux since I was 15, over 25 years, starting with Debian and Slackware, spending years on Arch, and now experimenting with NixOS. The terminal is where I'm most productive — scripting solutions rather than clicking through interfaces. On the infrastructure side, I've built serverless architectures on AWS managed through Terraform, and favour Nix locally for reproducibility.</p>
@@ -387,7 +387,7 @@
     </tr>
     <tr>
       <td>Backend &amp; APIs</td>
-      <td>Django, Django REST Framework, GraphQL, SPARQL</td>
+      <td>Async Rust (Tokio, Tower), Django, Django REST Framework, GraphQL, SPARQL</td>
     </tr>
     <tr>
       <td>Infrastructure</td>
@@ -512,13 +512,18 @@
         <div class="sub-title">Core Developer, Apollo Router</div>
         <div class="tags">
           <span class="tag">Rust</span>
+          <span class="tag">Async Rust</span>
+          <span class="tag">Tokio</span>
+          <span class="tag">Tower</span>
+          <span class="tag">OpenTelemetry</span>
+          <span class="tag">Distributed Systems</span>
           <span class="tag">Back-End Web Development</span>
           <span class="tag">Git</span>
           <span class="tag">GitHub</span>
           <span class="tag">Open-Source Software</span>
         </div>
         <div class="exp-desc">
-          <p>Joined Apollo Router as a freelance core developer in its early stages, contributing over 8 months to the query planner — the core engine responsible for federated GraphQL query planning and execution across distributed services. Helped lay the architectural foundations of what has become a widely adopted high-performance GraphQL gateway in the Rust ecosystem.</p>
+          <p>Joined Apollo Router as a freelance core developer in its early stages, contributing over 8 months to the query planner — the core engine responsible for federated GraphQL query planning and execution across distributed services. Helped lay the architectural foundations of what has become a widely adopted high-performance GraphQL gateway in the Rust ecosystem. Built on Tokio, Tower and hyper: worked on the asynchronous execution of query plans against subgraphs, query parsing and caching, OpenTelemetry trace propagation to subgraphs, Unix socket support, and the early Tower service pipeline.</p>
         </div>
       </div>
 
@@ -531,13 +536,15 @@
         <div class="sub-title">Back End Developer</div>
         <div class="tags">
           <span class="tag">Rust</span>
-          <span class="tag">Back-End Web Development</span>
+          <span class="tag">Async Rust</span>
+          <span class="tag">Tokio</span>
+          <span class="tag">Distributed Systems</span>
           <span class="tag">CLI</span>
           <span class="tag">Git</span>
           <span class="tag">GitHub</span>
         </div>
         <div class="exp-desc">
-          <p>Contributed to CLI tooling and developer experience improvements within the Polkadot ecosystem. Provided support and enhancements to command-line interfaces, helping to streamline developer workflows in the blockchain development environment.</p>
+          <p>Worked on the node service and CLI layers of Substrate, Polkadot and Cumulus, the async Rust (Tokio) codebase behind the Polkadot peer-to-peer network. Implemented graceful shutdown for the node's task manager, including child task managers for parachain nodes that embed a relay chain node, reworked node telemetry, refactored the CLI API, and built async test helpers and multi-node integration tests.</p>
         </div>
       </div>
 
